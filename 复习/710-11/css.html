@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: coral;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <script>
+        var oDiv = document.getElementById("div1");
+
+        function getStyle(elem,attr) {  //能力检测，不测试属于哪种浏览器，只需判断是否支持该语法
+            if(elem.currentStyle){   //IE
+                return elem.currentStyle[attr];
+            }
+            else if (window.getComputedStyle){  //标准
+                return getComputedStyle(elem,false)[attr];
+            }
+            else return elem.style[attr];
+        }
+        function css(elem,attr,value) {   //%,px,40,颜色NaN
+            if (value) {   //传了值，三个参数   设置值
+               if (isNaN(value)){  //颜色,px,%
+                   elem.style[attr] = value;
+                   console.log('isnan');
+                   console.log(elem.style[attr]);
+               }
+               else{
+                   console.log('是数字');
+                   elem.style[attr] = parseInt(value) +'px';
+                   console.log(elem.style[attr]);
+               }
+            }
+            else{  //两个参数，取值
+                if(typeof attr ==="string")
+                    console.log(getStyle(elem,attr));
+//                    return  getStyle(elem,attr);
+                else{
+                    console.log('notstring');
+                    for(var p in attr){
+                        switch (p){
+                            case 'width':
+                            case 'height':
+                            case 'padding':
+                            case 'paddingLeft':
+                            case 'paddingRight':
+                            case 'paddingTop':
+                            case 'paddingBottom':
+                                value = /\%/.test(attr[p])?attr[p]:Math.max(parseInt(attr[p]),0) + 'px';
+                                break;
+                            case 'left':
+                            case 'top':
+                            case 'bottom':
+                            case 'right':
+                            case 'margin':
+                            case 'marginLeft':
+                            case 'marginRight':
+                            case 'marginTop':
+                            case 'marginBottom':
+                                value = /\%/.test(attr[p])?attr[p]:parseInt(attr[p]) + 'px';
+                                break;
+                            default:value = attr[p];
+                        }
+                        elem.style[p]=value;
+                    }
+                }
+            }
+        }
+//         css(oDiv,'width','90%');
+                  css(oDiv,"height",100);
+        css(oDiv,"background","red");
+//      css(oDiv,'height');
+//        console.log(e);
+    </script>
+</body>
+</html>

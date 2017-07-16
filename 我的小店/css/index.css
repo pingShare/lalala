@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#div1{
+    position: relative;
+    height:  600px;
+    background-image:url("../images/banner.jpg");
+}
+#menu1{
+    width: 840px;
+    height: 50px;
+    background: hotpink;
+    margin-left: 250px;
+    margin-top: 100px;
+    float: left;
+    z-index:1;
+    position: absolute;
+}
+#menu1 ul{
+    list-style: none;
+}
+#menu1 li{
+    width: 140px;
+    height: 50px;
+    color: white;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+#menu1 li:hover{
+    background: dimgray;
+}
+#menu1 a{
+    text-decoration: none;
+    color:white;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#div1-1{
+    float: right;
+    width: 220px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background: #000 url(../images/cart.png) 230px center no-repeat;
+    opacity: .5;/* 取值范围0~1 */
+    filter: alpha(opacity=50);/* ie下  取值范围0~100 */
+    cursor: pointer;
+    line-height: 50px;
+    color: #fff;
+    padding-left: 10px;
+}
+#div1-1 a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*#div1-1 img{*/
+    /*!*float: right;*!*/
+    /*!*margin-top: 33px;*!*/
+    /*!*padding-right: 20px;*!*/
+/*}*/
+#clear{
+    text-align: center;
+    color: black;
+    font-weight:bolder;
+}
+#log1{
+    position: absolute;
+    color: white;
+    margin-left: 25px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+#ph{
+    color: white;
+    font-size:250%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 550px;
+    position: absolute;
+}
+
+#submenu{
+    width: 840px;
+    height: 300px;
+    background-color: gainsboro;
+    z-index: 1;
+    display: none;
+    margin-left: -140px;
+}
+#makeup:hover #submenu{
+    display: block;
+}
+
+#div2{
+    margin-left: 60px;
+    width: 1250px;
+    height: 300px;
+    position: relative;
+
+}
+#div2 li{
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    list-style: none;
+}
+#div2 img{
+    width: 370px;
+    height: 300px;
+    float: left;
+}
+#div2 p{
+    float: left;
+    color:palevioletred;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 220px;
+    font-weight: bold;
+    font-size:250%;
+}
+#div3{
+    margin-left: 90px;
+    margin-top: 90px;
+    position: relative;
+}
+.div-1{
+    width: 330px;
+    height: 500px;
+    border:1px solid #cccccc;
+    padding-left: 40px;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 4px;
+}
+#div3 img{
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+}
+#div3 button{
+    width: 120px;
+    height: 50px;
+    background:tomato;
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+    border:0;
+}
+#div3 button:hover{
+    background:salmon;
+}
+
+#div4{
+    position: relative;
+    float: left;
+    width: 1349px;
+    height: 300px;
+    background: url("../images/b2.jpg") round bottom;
+    text-decoration: none;
+    margin-right: 0;
+    margin-top: 30px;
+}
+#div4 ul{
+    float: left;
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+}
+.first{
+    font-weight: bolder;
+}
+#div4 a{
+    color: white;
+    text-decoration: none;
+}
+
+#div5{
+    position: relative;
+    width: 1349px;
+    height: 95px;
+    background: deeppink;
+    float: left;
+    background-position: bottom;
+}
+#p1{
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    margin-top: 38px;
+    margin-left: 30px;
+}
+#p2{
+    text-align:right;
+    color: white;
+    margin-right: 20px;
+    margin-top: -15px;
+}

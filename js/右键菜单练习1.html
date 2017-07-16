@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>右键菜单1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            border: 1px solid black;
+            width: 50px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: none;
+            border-bottom: none;
+        }
+
+        #div1 li{
+            list-style: none;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            /*width: 50px;*/
+            border: 1px solid black;
+        }
+        #div1 li:hover{
+            background: peachpuff;
+        }
+    </style>
+</head>
+<body>
+    <ul id="div1">
+        <li>打开</li>
+        <li>分享</li>
+        <li>下载</li>
+        <li>删除</li>
+        <li>查看</li>
+    </ul>
+    <script>
+        var omenu=document.getElementById("div1");
+        var ali=omenu.getElementsByTagName("li");
+
+        /*document.onContextMenu=function(e){
+            e=e||window.event;
+            omenu.style.display="block";
+            omenu.style.top=e.clientY+"px";
+            omenu.style.left=e.clientX+"px";
+            return false;
+        };*/
+        document.oncontextmenu = function (e) {
+            e=e||window.event;
+            omenu.style.display="block";
+            omenu.style.left=e.clientX+"px";
+            omenu.style.top=e.clientY+"px";
+            return false;
+        }
+        document.onclick=function () {
+            omenu.style.display="none";
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+</head>
+<body>
+    <ul id="ul1">
+        <li>001</li>
+        <li class="aa">002</li>
+        <li class="aa">003</li>
+    </ul>
+<!--<script src="myjslib.js"></script>-->
+<script>
+//    var oUl = $("#ul1",document);
+    /*var oUl = document.getElementById("ul1");
+    var aLi = getByClass("aa",oUl);
+    function  getByClass(className,context) {
+        context = context || document;
+        var result = [];
+        var arr = context.getElementsByTagName("*");
+        var re = new RegExp("\\b"+className+"\\b");
+        for (i = 0;i<arr.length;i++){
+            if (re.test(arr[i].className))
+            {
+                result.push(arr[i]);
+            }
+        }
+      return  result;
+    }
+
+    var aLi = getByClass("aa",oUl);
+    console.log(aLi);*/
+
+/**
+ * 去掉首尾空格
+ */
+function trim(str) {
+    return str.replace(/^\s+|\s+$/,'');
+}
+var str = "              jfjf f   f   ";
+trim(str);
+console.log(trim(str));
+</script>
+</body>
+</html>

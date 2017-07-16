@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <script>
+        var oBtn = document.getElementById("btn");
+        function fn() {
+            alert("eef");
+        }
+        function addEvent(elem,type,fn) {
+            if (elem.addEventListener) //标准
+                elem.addEventListener(type,fn,false);
+            else if (elem.attachEvent)  //ie
+            {
+                elem[type+fn] = function () {
+                fn.call(elem);
+               };
+                elem.attachEvent('on'+type,elem[type+fn]);
+            }
+            else elem['on'+type] = fn;    //?
+        }
+        function removeEvent(elem,type,fn) {
+            if (elem.removeEventListener) //标准
+                elem.removeEventListener(type,fn);
+            else if(elem.detachEvent)
+                elem.detachEvent(type,fn);
+            else elem['on'+type] = fn;
+        }
+        addEvent(oBtn,'click',fn);
+        removeEvent(oBtn,'click',fn);
+    </script>
+</body>
+</html>

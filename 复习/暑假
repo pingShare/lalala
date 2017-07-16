@@ -1,0 +1,83 @@
+﻿7-10
+document.querySelector('li') 只选择第一个
+document.querySelectorAll('li')  选中全部
+
+mdn  可以查兼容性
+
+dom操作
+    1.元素查找
+    2.元素遍历
+    3.元素操纵
+
+   子节点  children 非正规，  childrenNode
+    offsetParent 找离自己最近的已定位的祖先元素
+    父节点  parentNode
+    nextSibling
+    nextElementSibling    previousSibling
+    insertbefore(new,old)
+
+    arguments.callee();//指向当前被调用的函数本身
+
+7-11
+正则表达式
+创建方法：直接量  标准
+\d 一个数字  \D非数字
+\s.+    \s+
+子表达式( )( )
+
+i忽略大小写  开头^      结尾$
+
+function trim(str){  //去掉空格
+   re.replace(/^\s+|\s+$/g,'');
+}
+
+className形参   var re = new regExp("\\d"+classname+"\\d",'g');
+
+获取当前元素样式   getComputedStyle  currentStyle(IE)
+
+事件绑定问题
+函数也是对象，可以函数名.方法    只有函数对象下才有call方法
+ie把对象绑丢了
+-> call允许改变this指针指向，指向第一个参数   aa.call({name:'lisi'},'lisi',12)
+apply            aa.apply({name:'lisi'},['lisi','12'])
+
+
+
+7-12
+面向对象
+类：具有相同属性和方法的集合           函数首字母小写，类首字母大写
+类也可以叫做构造函数
+方法在类外定义 prototype原型  Cat.prototype.eat=function(){};
+原型链 有查找的过程    当定义一个函数的时候，属性放在构造函数里，方法放在原型里。
+
+jquery
+链式操作    省空间，找元素只要找一次
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

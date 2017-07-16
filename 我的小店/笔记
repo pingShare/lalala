@@ -1,0 +1,11 @@
+js
+￥179  只取数字  split substr substring
+
+函数立即调用
+
+脱离文档流的行级元素也可以设置宽高、display:block
+
+
+回调函数  执行完其他再执行这个函数
+
+//div1-1宽度要改，去掉img的样式，clear改center,

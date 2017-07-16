@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折叠菜单</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #container{
+            width: 200px;
+            margin: 100px auto;
+            cursor: pointer;
+        }
+        #top,#bottom{
+            width: 200px;
+            /*height: 100px;*/
+            border: 1px solid black;
+        }
+        h2{
+            color: #ffffff;
+            background-color: #000;
+        }
+        ul{
+            list-style: none;
+            display: none;
+        }
+        #container li:hover{
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <h2>管理区</h2>
+            <ul>
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+            </ul>
+        </div>
+        <div id="bottom">
+            <h2>交流区</h2>
+            <ul>
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var oContainer = document.getElementById("container");
+        var aH2 = oContainer.getElementsByTagName("h2");
+        var aUl = oContainer.getElementsByTagName("ul");
+
+//        var subul=[];
+//        for(i=0;i<aUl.length;i++){
+//            if(aUl[i].className="")
+//        }
+        /*
+        * 用div包ul例子，老师上课用的是ul里包ul*/
+
+        for(i=0;i<aH2.length;i++){
+            aH2[i].index=i;
+            aH2[i].onclick = function () {
+                if(aUl[this.index].style.display=="block")
+                { aUl[this.index].style.display="none";}
+                else
+                { aUl[this.index].style.display="block";}
+            }
+        }
+        
+    </script>
+</body>
+</html>

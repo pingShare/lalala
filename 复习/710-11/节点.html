@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点</title>
+</head>
+<body>
+    <ul id="u1">
+        <li id ="aa">
+            <ul>
+                <li>00</li>
+                <li>01</li>
+            </ul>
+        </li>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    <div id="div1">
+
+    </div>
+    <!--<script src="../封装.js"></script>-->
+    <script>
+
+    var oUl = document.getElementById("u1");
+    var aLi = oUl.getElementsByTagName("li");
+    var aLiClass = oUl.getElementsByClassName("list");
+       /* function sibilings(elem) {  //兄弟节点
+            var bro = [];
+            var oParent = elem.parentNode;
+            var aChildren = oParent.children;
+            for (var i = 0;i<aChildren.length;i++){
+                if (aChildren[i] != elem){
+                    bro.push(aChildren[i]);
+                }
+            }
+            return bro;
+        }
+       var c=[];
+        c=sibilings(aLi[0]);
+      console.log(sibilings(aLi[0]));*/
+       /* function siblings(elem) {
+            var arr = [];
+            var elements = elem.parentNode.children;
+            for(var i=0; i<elements.length; i++){
+                if(elements[i] != elem){
+                    arr.push(elements[i]);
+                }
+            }
+            return arr;
+        }*/
+//        console.log(siblings(oLi));
+function next(elem) {
+    do {
+        elem = elem&&elem.nextSibling;
+    }while  (elem&&elem.nodeType!=1)
+    return elem;
+}
+function first(elem) {
+    elem = elem.firstChild;
+    console.log(elem);
+    return elem.nodeType == 1 ? elem:next(elem);
+}
+//var oo = first(oUl);
+//   console.log(oo);
+//    console.log(aLi);
+//   console.log(next(aLi[1]));
+    function prev(elem) {
+        do{
+            elem = elem && elem.previousSibling;
+        }while(elem && elem.nodeType != 1);
+        return elem;
+    }
+
+    /**
+     * 查找指定元素的最后一个孩子节点
+     */
+    function last(elem) {
+        elem = elem.lastChild;
+        return elem.nodeType == 1? elem:prev(elem);
+    }
+    last(oUl);
+    console.log(last(oUl));
+
+    function insertbefore(newNode,oldNode) {
+
+    }
+    </script>
+
+</body>
+</html>

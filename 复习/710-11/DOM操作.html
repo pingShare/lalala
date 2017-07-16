@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父节点-兄弟节点</title>
+</head>
+<body>
+<script>
+
+   /* dom操作
+    1.元素查找
+    2.元素遍历
+    3.元素操纵
+
+    children 非正规，  childrenNode
+    offsetParent 找离自己最近的已定位的祖先元素
+    parentNode
+    nextSibling
+    nextElementSibling    previousSibling
+
+
+    /*function Siblings(elem){//兄弟结点
+     var a[];
+     var oparent = elem.parentNode;
+     var achildren = oparent.children;
+     for(var c in achildren)
+     { if(c != elem)  a[i] = c;}
+     return a[i];
+     }*/
+
+    //找所有兄弟->找父节点，再找出他的子结点，再把自己刨除去
+    function Siblings(elem){//兄弟结点
+        var a = [];
+        var oparent = elem.parentNode;
+        var achildren = oparent.children;
+        // for(var c in achildren)
+        //  { if(c != elem)  a[i] = c;}
+        for(i=0;i<achildren.length;i++){
+            if(achildren[i] != elem)
+                a.push(achildren[i]);
+        }
+        return a[i];
+    }
+   var oSpan = document.createElement('span');    //创建元素
+    oSpan.innerHTML = 'nihih';
+    /**
+     * 元素操纵
+     *标准浏览器：remove(删除（并返回）当前节点的指定子节点)  insertbefore(要插入的，已存在的)  append  replaceChild
+     */
+    function remove(elem) {
+        var oParent = elem.parentNode.childNodes.removeChild(elem);
+    }
+    /**
+     * 在给定的当前元素的前面插一个新元素   //用父元素进行操作 父元素.inserbefore(X,X)
+     */
+    function before() {
+
+    }
+
+    /**
+     * 在给定的当前元素的后面插一个新元素
+     */
+    function after(elem,newNode) {
+        var oParent = elem.parentNode;
+         if(elem.nextSibling === null) oParent.appendChild(newNode);
+         else {
+             oParent.insertBefore(newNode,elem.nextSibling);
+         }
+    }
+function prev(elem) {
+    do{
+        var elem = elem&&elem.previousSibling;
+    }while (elem&&elem.nodeType != 1)  //满足条件执行循环
+    return elem;
+}
+
+</script>
+</body>
+</html>

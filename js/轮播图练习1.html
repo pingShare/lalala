@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图练习1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width:800px;
+            height: 500px;
+            margin: 100px auto;
+            position: relative;
+        }
+        #images img{
+            width:800px;
+            height: 500px;
+            display: none;
+        }
+        #images .select{
+            display: block;
+        }
+        #num{
+            list-style:none;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+        }
+        #num li,#arrows div{
+            float:left;
+            width:15px;
+            height: 15px;
+            margin-right: 6px;
+            color: white;
+            background: #000;
+            line-height: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #arrows{
+            position: absolute;
+            left: 3px;
+            bottom: 5px;
+        }
+        #num .select{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="images">
+        <img src="img/1.jpg" alt="" class="select">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/5.jpg" alt="">
+        <img src="img/6.jpg" alt="">
+        <img src="img/7.jpg" alt="">
+        <img src="img/8.jpg" alt="">
+
+    </div>
+    <ul id="num">
+        <li class="select">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+
+    </ul>
+    <div id="arrows">
+        <div id="left">&lt;</div>
+        <div id="right">&gt;</div>
+    </div>
+</div>
+
+    <script>
+        var oImgs=document.getElementById("images");
+        var aImg=oImgs.getElementsByTagName("img");
+        var oNum=document.getElementById("num");
+        var aLi=oNum.getElementsByTagName("li");
+        var oleft=document.getElementById("left");
+        var oright=document.getElementById("right");
+        var oContainer=document.getElementById("container");
+        var nowindex=0;
+        var timer;
+
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].index=i;
+            aLi[i].onmouseover=function(){
+                nowindex = this.index;
+                for(i=0;i<aLi.length;i++){
+                    aLi[i].className="";
+                    aImg[i].className="";
+                }
+                this.className="select";
+                aImg[this.index].className="select";
+            };
+        }
+            oleft.onclick=oright.onclick=function(){
+                if(this==oleft)
+                {
+                    nowindex--;
+                    if(nowindex == -1){
+                        nowindex = aLi.length-1;
+                    }
+
+                }
+                else{
+                    nowindex++;
+                    if(nowindex==aLi.length)
+                    {
+                        nowindex = 0;
+                    }
+
+                }
+                for(i=0;i<aLi.length;i++){
+                    aLi[i].className="";
+                    aImg[i].className="";
+                }
+                aLi[nowindex].className="select";
+                aImg[nowindex].className="select";
+            }
+
+            oContainer.onmouseover=function(){
+                clearInterval(timer);
+            };
+            oContainer.onmouseout=function(){
+                play();
+            };
+            play();
+        // window.onload=function(){play();}
+            function play() {
+                timer = setInterval(function(){
+                    oright.onclick();
+                    },1000);
+            }
+
+    </script>
+</body>
+</html>

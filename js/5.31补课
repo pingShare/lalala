@@ -1,0 +1,55 @@
+5.31补课
+标签    元素结点   结点类型 1
+空格,文字... 文本节点 3
+注释    类型8
+
+nextsibling （找结点不同）   找的是下一个兄弟   只IE支持，标准浏览器找到了空格
+
+用nextelementsibling  IE不支持,直接报错
+
+next找下一个兄弟
+
+-> 自己封装一个函数  用来返回下一个兄弟
+
+//var oul=next(this);
+...
+do{
+
+
+}while
+
+如果elem.nextsibling为null
+
+
+0 '' undefined 相当于null  js中直接用if(elem)也可以
+
+js  对象.style可以设置值，取值得到的是内联样式，外部样式得不到
+
+
+方法二：无兼容性问题
+ul放数组  与h3索引对应  自定义属性
+this.index存住值
+
+显示/隐藏  boolean  标识位
+
+一个bshow控制不了两个菜单
+->xx.bshow
+
+
+筛选出 classname="xx"   不严谨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

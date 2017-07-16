@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var o1 = {
+        name:'lili',
+        age:19
+    };
+    var o2 = {
+        name:'jhh',
+        age:20,
+        brother:{
+            name:'eeee',
+            age:17
+        }
+    };
+    /**
+     * newobj往obj里合并
+     * @param obj
+     * @param newobj
+     */
+    function extend(obj,newobj) {
+        for(var p in newobj){
+            if(newobj[p] === 'object'){
+                obj[p] = newobj.clone(newobj[p]);
+            }
+            else{
+                obj[p] = newobj[p];
+            }
+        }
+        return obj;
+    }
+    function clone(obj) {
+        var newobj = [];
+        for (var p in obj){
+            if (obj[p]==="object"){
+                newobj[p] = clone(obj[p]);
+            }
+            else newobj[p] = obj[p];
+        }
+        return newobj;
+    }
+
+    o2 = clone(o1);
+    console.log(o2);
+//    console.log(extend(o1,o2));
+
+</script>
+
+</body>
+</html>

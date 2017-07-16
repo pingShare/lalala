@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <ul id="ul2">
+        <li>item 1</li>
+        <li class="bb">item 2</li>
+        <li class="bb">item 3</li>
+    </ul>
+<script>
+    function addEvent(elem, type, fn){
+        if (elem.addEventListener) //标准
+            elem.addEventListener(type,fn);
+        else if (elem.attachEvent)  //ie
+            elem.attachEvent(type,fn);
+        else elem['on'+type] = fn;    //?
+    }
+    function  getByClass(className,context) {
+        context = context || document;
+        var result = [];
+        console.log('getbyclass');
+        var arr = context.getElementsByTagName("*");
+        var re = new RegExp("\\b"+className+"\\b");   //创建 RegExp 对象不用加//
+        for (i = 0;i<arr.length;i++){
+            if (re.test(arr[i].className))
+            {
+                result.push(arr[i]);
+            }
+        }
+        return  result;
+    }
+
+    function $(selector,context) {
+        context = context || document;
+        var elements = [];
+        switch (selector.charAt(0)) {
+            case '#':
+                elements = [document.getElementById(selector.substr(1))];
+                console.log('#');
+                break;
+            case '.':
+                elements = getByClass(selector.substr(1), context);
+                console.log('.');
+                break;
+            default:
+                elements = context.getElementsByTagName(selector);
+                console.log('tag');
+                break;
+        }
+        return {
+            click: function (fn) {
+                console.log('click');
+                for (var i = 0; i < elements.length; i++)
+                    addEvent(elements[i], 'click', fn);
+                return this;
+            }
+//            mouseover: function (fn) {
+//                for (var i = 0; i < elems.length; i++)
+//                    addEvent(elems[i], 'mouseover', fn);
+//                return this;
+//            },
+//            css: function (elem, attr, value) {   //%,px,40,颜色NaN
+//                if (value) {   //传了值，三个参数   设置值
+//                    if (isNaN(value)) {  //颜色,px,%
+//                        elem.style[attr] = value;
+//                        console.log('isnan');
+//                        console.log(elem.style[attr]);
+//                    }
+//                    else {
+//                        console.log('是数字');
+//                        elem.style[attr] = parseInt(value) + 'px';
+//                        console.log(elem.style[attr]);
+//                    }
+//                }
+//                else {  //两个参数，取值
+//                    if (typeof attr === "string")
+//                        console.log(getStyle(elem, attr));
+////                    return  getStyle(elem,attr);
+//                    else {
+//                        console.log('notstring');
+//                        for (var p in attr) {
+//                            switch (p) {
+//                                case 'width':
+//                                case 'height':
+//                                case 'padding':
+//                                case 'paddingLeft':
+//                                case 'paddingRight':
+//                                case 'paddingTop':
+//                                case 'paddingBottom':
+//                                    value = /\%/.test(attr[p]) ? attr[p] : Math.max(parseInt(attr[p]), 0) + 'px';
+//                                    break;
+//                                case 'left':
+//                                case 'top':
+//                                case 'bottom':
+//                                case 'right':
+//                                case 'margin':
+//                                case 'marginLeft':
+//                                case 'marginRight':
+//                                case 'marginTop':
+//                                case 'marginBottom':
+//                                    value = /\%/.test(attr[p]) ? attr[p] : parseInt(attr[p]) + 'px';
+//                                    break;
+//                                default:
+//                                    value = attr[p];
+//                            }
+//                            elem.style[p] = value;
+//                        }
+//                    }
+//                }
+//            }
+        };
+    }
+console.log($('.bb').click());
+   /* $('btn').mouseover(function () {
+        alert('ff');
+    })*/
+    $('.bb').click(function () {
+        alert('ff');
+    });
+    console.log('clickbb');
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折叠菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #menu{
+            width: 100px;
+            border:1px solid black;
+            cursor: pointer;
+        }
+        #menu h3{
+            background: #000;
+            color: white;
+            width: 100px;
+        }
+        #menu .submenu{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <ul id="menu">
+        <li>
+            <h3>管理区</h3>
+            <ul class="submenu">
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+            </ul>
+        </li>
+        <li>
+            <h3>交流区</h3>
+            <ul class="submenu">
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+    <script>
+        var oMenu=document.getElementById("menu");
+        var aUl=oMenu.getElementsByTagName("ul");
+        var aH3=document.getElementsByTagName("h3");
+        var subul=[];
+        for(i=0;i<aUl.length;i++){
+            if(aUl[i].className=="submenu"){
+                subul.push(aUl[i]);
+            }
+        }
+
+        for(i=0;i<aH3.length;i++){
+            aH3[i].index=i;
+            aH3[i].onclick=function(){
+            if(subul[this.index].style.display =="block")
+                 subul[this.index].style.display="none";
+            else subul[this.index].style.display="block";
+//                subul[this.index].style.display="block";
+           }
+
+        }
+
+    </script>
+</body>
+</html>

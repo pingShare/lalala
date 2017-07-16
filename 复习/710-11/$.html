@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$</title>
+</head>
+<body>
+<div id="nav">
+    <h3>aaa</h3>
+    <ul id="ul1">
+        <li class="list">01</li>
+        <li>02</li>
+    </ul>
+</div>
+    <script>
+//        var oDiv = document.getElementById("nav");
+//        var aLiTag = oDiv.getElementsByTagName("li");
+//        var aLiClass = oDiv.getElementsByClassName("list");
+
+//        console.log(aLiTag);
+//        console.log(aLiClass);
+
+function  getByClass(className,context) {
+    context = context || document;
+    var result = [];
+    var arr = context.getElementsByTagName("*");
+    var re = new RegExp("\\b"+className+"\\b");   //创建 RegExp 对象不用加//
+    for (i = 0;i<arr.length;i++){
+        if (re.test(arr[i].className))
+        {
+            result.push(arr[i]);
+        }
+    }
+    return  result;
+}
+
+        function $(selector,context) {
+            context = context||document;
+            switch (selector.charAt(0)){
+                case '#':
+                    return document.getElementById(selector.substr(1));
+                    break;
+                case '.':
+                    return getByClass(selector.substr(1),context);
+                    break;
+                default:
+                    return document.getElementsByTagName(selector,context);
+            }
+        }
+        oDiv = $("#nav",document);
+        aLiClass = $(".list",oDiv);
+        console.log(oDiv);
+//        console.log("aLiClass");
+        console.log(aLiClass);
+
+        oUl = $("#ul1",document);
+        aLiTag = $("li",oUl);
+        console.log(oUl);
+        console.log(aLiTag);
+    </script>
+
+
+</body>
+</html>

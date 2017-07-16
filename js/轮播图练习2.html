@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        #total{
+            width: 450px;
+            height: 350px;
+            margin:100px auto;
+            position: relative;
+        }
+        #imgs{
+            width: 450px;
+        }
+        #imgs img{
+            display: none;
+            width: 450px;
+            height: 350px;
+        }
+
+        #imgs .select{
+            display: block;
+            width: 450px;
+            height: 350px;
+
+        }
+        #arrow{
+            float: left;
+            bottom:10px;
+            left: 10px;
+            width: 70px;
+            height: 20px;
+            position: absolute;
+        }
+        #left,#right{
+            float: left;
+            width: 15px;
+            height: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-left:5px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #num{
+            float: right;
+            width: 100px;
+            height: 20px;
+            bottom: 10px;
+            right: -10px;
+            position: absolute;
+        }
+        #num li{
+            float: left;
+            width: 15px;
+            height: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-left:5px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #num .select{
+            background-color: orange;
+        }
+        ul{
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body onselect="return false">
+    <div id="total">
+        <div id="imgs">
+            <img src="img/1.jpg" alt="" class="select">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <div id="arrow">
+            <div id="left">&lt;</div>
+            <div id="right">&gt;</div>
+        </div>
+        <div>
+            <ul id="num">
+                <li class="select">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var oImgs = document.getElementById("imgs");
+        var aImg = oImgs.getElementsByTagName("img");
+        var oNum = document.getElementById("num");
+        var aLi = oNum.getElementsByTagName("li");
+        var oLeft = document.getElementById("left");
+        var oRight = document.getElementById("right");
+        var oTotal = document.getElementById("total");
+        var nowindex = 0;
+        var timer;
+        for(i=0;i<aLi.length;i++){
+            aLi[i].index = i;
+            aLi[i].onmouseover = function () {
+                for(i=0;i<aLi.length;i++){
+                    aLi[i].className = "";
+                    aImg[i].className = "";
+                }
+                this.className = "select";
+                aImg[this.index].className = "select";
+            }
+        }
+
+        oLeft.onclick= oRight.onclick=function () {
+            if(this==oLeft){
+                nowindex--;
+                if (nowindex<0)
+                    nowindex=aLi.length-1;
+//                console.log(nowindex);
+            }
+            else{
+                nowindex++;
+                if(nowindex==aLi.length)
+                    nowindex= 0;
+//                console.log(nowindex);
+            }
+            for(i=0;i<aLi.length;i++){
+
+                aLi[i].className = "";
+                aImg[i].className = "";
+            }
+            aLi[nowindex].className = "select";
+            aImg[nowindex].className = "select";
+        }
+            oTotal.onmouseover = function () {
+                clearInterval(timer);
+            }
+            oTotal.onmouseout = function () {
+                play();
+            }
+            play();
+        function play(){
+            timer = setInterval(function () {
+                oRight.onclick();
+            },1000);
+        }
+    </script>
+</body>
+</html>
