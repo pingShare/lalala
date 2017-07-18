@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折叠菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #menu{
+            width: 100px;
+            border:1px solid black;
+            cursor: pointer;
+        }
+        #menu h3{
+            background: #000;
+            color: white;
+            width: 100px;
+        }
+        #menu .submenu{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul id="menu">
+            <li>
+                <h3>管理区</h3>
+                <ul class="submenu">
+                    <li>001</li>
+                    <li>002</li>
+                    <li>003</li>
+                </ul>
+            </li>
+            <li>
+                <h3>交流区</h3>
+                <ul class="submenu">
+                    <li>001</li>
+                    <li>002</li>
+                    <li>003</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="jquery-1.11.2.js"></script>
+    <script>
+        $(function () {
+            $("#menu h3").on("click",function () {
+                $(this).siblings($(this)).stop().slideToggle();
+                });
+        });
+
+    </script>
+</body>
+</html>

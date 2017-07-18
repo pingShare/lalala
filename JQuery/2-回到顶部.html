@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            height: 2000px;
+        }
+        #div1{
+            width: 80px;
+            height:80px;
+            line-height: 80px;
+            text-align: center;
+            background:coral;
+            position: fixed;
+            right: 10px;
+            bottom: 50px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+      回到顶部
+    </div>
+    <script src="jquery-1.11.2.js"></script>
+    <script>
+       /* var oDiv = $('#div');     //错误
+        var timer;
+        oDiv.onclick = function () {
+            if (oDiv.scrollTop>=0)  //需要滚动
+               setInterval(scroll(oDiv.scrollTop-=0),100);
+               clearInterval(timer);
+            else  //不需要滚动
+                oDiv.scrollTop=0 ;
+        }*/
+
+       /*var oTop = document.getElementById("div1");     //原生方法
+       oTop.onclick = function () {
+           var timer = setInterval(function () {
+               var iScrollTop = document.body.scrollTop||document.documentElement.scrollTop;
+               if (iScrollTop<=0)
+                   clearInterval(timer);
+               else
+                   window.scrollTo(0,iScrollTop-=50);
+           },100);
+       };*/
+       $(function () {   //JQ方法
+           $("#div1").on("click",function () {
+               var target;
+               if(document.documentElement.scrollTop)
+                   target = $("html");
+               else
+                   target = $("body");
+               var timer = setInterval(function () {
+                   var iScrollTop = target.scrollTop();   //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
+                   if (iScrollTop<=0)
+                       clearInterval(timer);
+                   target.scrollTop(iScrollTop-=50);
+               },100);
+           })
+       })
+    </script>
+</body>
+</html>

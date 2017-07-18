@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="search">
+    <ul id="ul1">
+        <li>llii</li>
+        <li>lalala</li>
+        <li>loooo</li>
+    </ul>
+    <script src="jquery-1.11.2.js"></script>
+    <script>
+        $(function () {
+            $("#search").on("keyup",function () {
+                if (this.value!=""){
+                    $("#ul1 li").css("background","transparent");
+                    $("#ul1 li:contains("+this.value.toLowerCase()+")").css("background", "yellow");
+                }
+                else{
+                    $("#ul1 li").css("background","transparent");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

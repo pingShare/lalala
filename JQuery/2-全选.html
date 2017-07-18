@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选</title>
+</head>
+<body>
+<input type="checkbox" name="check">aa
+<input type="checkbox" name="check">bb
+<input type="checkbox" name="check">cc
+<input type="checkbox" name="check">dd
+<br>
+<input type="button" value="全选" id="all">
+<input type="button" value="全不选" id="none">
+<input type="button" value="反选" id="reverse">
+<script src="jquery-1.11.2.js"></script>
+<script>
+    $(function () {
+        var $check = $("input[name=check]");
+        $("#all").on("click",function () {
+            $check.prop("checked",true);
+        });
+        $("#none").on('click',function () {
+            $check.prop("checked",false);
+        });
+        $("#reverse").on('click',function () {
+//            $check.each($check,checked,this.checked!=this.checked);
+            $check.each(function () {
+                this.checked=!this.checked
+            })
+        });
+    });
+</script>
+
+</body>
+</html>

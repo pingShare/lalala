@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <button id="up">向上</button>
+    <button id="down">向下</button>
+    <br>
+    <textarea name="" id="text" cols="30" rows="4">变多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.
+    </textarea>
+
+    <script src="../jquery-1.11.2.js"></script>
+    <script>
+        /*$(function () {  //简单的边框上下
+            var $comment = $("#text");
+            $("#up").on("click",function () {
+                $comment.height($comment.height()>70?$comment.height()-20:$comment.height());
+        });
+            $("#down").on("click",function () {
+                $comment.height($comment.height()<200?$comment.height()+20:$comment.height());
+            });
+        });*/
+
+       /* $(function () {     //动画上下
+            var $comment = $("#text");
+            $("#up").on("click",function () {
+                if (!$comment.is("：animated")){
+                    if ($comment.height()>70){
+                        $comment.animate({height:"-=20"},400);
+                    }
+                }
+            });
+            $("#down").on("click",function () {
+                if (!$comment.is(":animated")){
+                    if($comment.height()<200){
+                        $comment.animate({height:"+=20"},400);
+                    }
+                }
+            });
+
+        })*/
+       $(function () {    //按动按钮，滚动条滚动
+           var $comment = $("#text");
+           $("#up").on("click",function () {
+                   if ($comment.height()>50){
+                       $comment.stop().animate({scrollTop:"-=30"},400);
+                   }
+           });
+           $("#down").on("click",function () {
+                   if($comment.height()<300){
+                       $comment.stop().animate({scrollTop:"+=30"},400);
+                   }
+           });
+       })
+    </script>
+</body>
+</html>

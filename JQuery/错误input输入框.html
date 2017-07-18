@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input输入框</title>
+</head>
+<body>
+     <input type="text" name="search" value=" ">
+     <ul id="ul1">
+         <li>llii</li>
+         <li>lalala</li>
+         <li>loooo</li>
+     </ul>
+     <script src="jquery-1.11.2.js"></script>
+     <script>
+         //var oInput = $("search");
+         var oInput = document.getElementsByName("search");
+         console.log(oInput.value);
+//         var aLi = $("li");
+//         var content = [];
+         oInput.onkeyup = function () {
+             for(i=0; i<aLi.length; i++){
+                 if(li.contains(oInput.value))   //匹配的上
+                     $("li:contains(oInput.value)").css("background","yellow");
+                 else $("li:contains(oInput.value)").css("background","white");
+             }
+
+         }
+     </script>
+</body>
+</html>

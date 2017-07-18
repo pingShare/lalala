@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="search">
+    <ul id="menu">
+        <li>ihone</li>
+        <li>hhhh</li>
+        <li>dtdut</li>
+    </ul>
+    <script src="jquery-1.11.2.js"></script>
+    <script>
+        $(function () {
+            $("#search").on("keyup",function () {
+                if(this.value!=""){
+                    $("#menu li").css("background","transparent");
+                }
+                else{
+                    $("#menu li").css("background","transparent");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

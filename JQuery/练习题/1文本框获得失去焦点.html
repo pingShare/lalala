@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .focus{
+            border: 1px solid cadetblue;
+            background-color: pink;
+        }
+        input,textarea{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <span>名称：</span>
+    <input type="text" class="aa"> <br>
+    <span>密码：</span>
+    <input type="password" class="aa"> <br>
+    <span>详细信息：</span>
+    <textarea name="" cols="20" rows="2" class="aa"></textarea>
+
+    <script src="../jquery-1.11.2.js"></script>
+    <script>
+        $(function () {
+            $(":input").focus(function () {
+                $(this).addClass("focus");
+            }).blur(function(){  //失去焦点会触发blur事件
+                $(this).removeClass("focus");
+            });
+        });
+    </script>
+</body>
+</html>
