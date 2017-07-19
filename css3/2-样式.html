@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式</title>
+    <style>
+        #div2{
+            width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            border:1px solid;
+            height: 50px;
+        }
+        #div3{
+            width: 150px;
+            border:1px solid black;
+            height: 100px;
+        }
+        #div2::first-letter{
+            font-size: large;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">divdivdiv</div>
+
+    <div id="div2">    阿斯顿发送到发生的发生阿斯顿发生发斯蒂芬阿斯顿发送到发斯蒂芬</div>
+
+    <div id="div3">      asdfasdfasdfasdk lfjsal djflkasjfdlkas jdlkfj sadlkfjlasdjf</div>
+
+</body>
+</html>

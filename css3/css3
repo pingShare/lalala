@@ -1,0 +1,49 @@
+css
+can i use
+
+前缀-webkit-   -moz-   -ms-  -o-  标准
+
+p+p  p~p
+
+hover  早期IE只支持a:hover
+
+#div1::first-line{
+}
+E::after{
+   content:
+}
+E::before{
+   content:
+}
+
+通用样式  clearfix  阻止塌陷
+.clearfix::after{
+  content:
+  clear:both;
+  diaplay:block;
+}
+
+
+计划开始计划...{
+    white-space：nowrap  不换行
+    overflow:hiden     超出部分隐藏
+    text-overflow:ellipsis   超出显示省略号
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
