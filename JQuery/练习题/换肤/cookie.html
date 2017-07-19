@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    addCookie("username","lili");
+    getCookie("username");
+    function addCookie(key,val,expires) {
+        var str = key + '=' +val;
+        if(expires){
+            var date = new Date();
+            date.setDate(date.getDate() + expires);
+            str = str + ";expires:" + expires;
+        }
+        document.cookie = str;
+    }
+
+    function  del(key) {
+        var date = new Date();
+        date.setDate(date.getDate() - 100)
+        document.cookie = key + "=333;expires =" + date.toUTCString();
+    }
+    //school=weichuang; name=lisi
+    function getCookie(key) {
+        var str = document.cookie.split("; ");
+        for (var i=0;i<str.length;i++){
+            var temp = str[i].split("=");
+            if (temp[0].trim()==key)
+                return temp[1];
+        }
+    }
+</script>
+</body>
+</html>

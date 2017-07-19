@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="jquery-1.11.2.js"></script>
+<script src="jquery.cookie.js"></script>
+<script>
+    $(function(){
+        $.cookie("username","poop",{expires:1});
+        console.log($.cookie("username"));        //提示$.cookie不是函数   //引入库文件
+//        $.cookie("username",'',{expires:-1});
+//        console.log($.cookie("username"));
+        $.cookie('username','',{expires:-1});
+        console.log($.cookie("username"));    //删除后显示null
+    });
+
+
+</script>
+</body>
+</html>

@@ -36,6 +36,8 @@ focus 不支持时间冒泡   focusin支持时间冒泡
 cookie   document.cookie  过期时间expires  cookie的key是唯一的
 缺点：不安全、拖慢速度、最多4K
 
+7-19
+
 
 
 
