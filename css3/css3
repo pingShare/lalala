@@ -43,7 +43,7 @@ background-size  cover和contain
 
 弹性盒模型  分配父元素的剩余空间
 
-动画：变形、过渡、动画
+动画：变形tranform、过渡transition、动画animation
 一、变形
 tranform:scale()  rotate  空格分隔
 tranform:rotate(40deg);旋转
@@ -86,10 +86,8 @@ http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animat
 
 translateZ的功能就是让元素在自己的眼前或近或远
 
-perspective属性有两种书写形式，一种用在舞台元素上（动画元素们的共同父辈元素）；
-           第二种就是用在当前动画元素上，与transform的其他属性写在一起
-perspective: 600px;
-transform: perspective(600px) rotateY(45deg);
+perspective属性有两种书写形式，一种用在舞台元素上（动画元素们的共同父辈元素）perspective: 600px;
+           第二种就是用在当前动画元素上，与transform的其他属性写在一起transform: perspective(600px) rotateY(45deg);
 
 transform-style: preserve-3d
 一般而言，该声明应用在3D变换的兄弟元素们的父元素上，也就是舞台元素。

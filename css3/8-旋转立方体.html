@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转立方体</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+
+        }
+        body{
+            perspective-origin: 70% -250px;
+            perspective: 1000px;
+        }
+        #container{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /*perspective-origin: 50% 20%;*/
+            transform-style: preserve-3d;
+            animation: rotate 2s linear infinite;
+            margin:200px auto;
+            background: none;
+
+        }
+        .cure{
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.6);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            position: absolute;
+            /*margin:200px auto;*/
+            /*left: 600px;*/
+        }
+        .one{
+            transform:rotateY(180deg) translateZ(100px);
+        }
+        .two{
+            transform:rotateY(-90deg)  translateZ(100px);
+        }
+        .three{
+            transform:rotateY(90deg)  translateZ(100px);
+        }
+        .four{
+            transform:rotateX(-90deg)  translateZ(100px);
+        }
+        .five{
+            transform:rotateX(90deg)  translateZ(100px);
+        }
+        .six{
+            transform:rotateX(0deg)  translateZ(100px);
+        }
+        @keyframes rotate {
+            from{
+
+            }
+            to{
+                -webkit-transform: rotateY(-360deg);
+                -moz-transform: rotateY(-360deg);
+                -ms-transform: rotateY(-360deg);
+                -o-transform: rotateY(-360deg);
+                transform: rotateY(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="cure one">1</div>
+    <div class="cure two">2</div>
+    <div class="cure three">3</div>
+    <div class="cure four">4</div>
+    <div class="cure five">5</div>
+    <div class="cure six">6</div>
+</div>
+</body>
+</html>
