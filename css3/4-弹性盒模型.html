@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            height: 1000px;
+        }
+        #left{
+            background:yellowgreen;
+            /*width: 300px;*/
+            height: 300px;
+            -webkit-box-flex: 2;
+        }
+        #center{
+            background: #CDE074;
+            height: 400px;
+            -webkit-box-flex: 2;
+        }
+        #right{
+            background: darkseagreen;
+            height: 500px;
+            -webkit-box-flex: 1;
+            /*-webkit-box-ordinal-group: 3;*/
+        }
+        #main{
+            display: -webkit-box;
+            /*-webkit-box-align:end;*/
+            /*-webkit-box-orient: vertical;*/
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="left">left</div>
+        <div id="center">center</div>
+        <div id="right">right</div>
+    </div>
+
+</body>
+</html>

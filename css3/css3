@@ -1,6 +1,6 @@
 css
 can i use
-
+7-19
 前缀-webkit-   -moz-   -ms-  -o-  标准
 
 p+p  p~p
@@ -30,12 +30,69 @@ E::before{
     text-overflow:ellipsis   超出显示省略号
 }
 
+7-20
+一种背景: background-clip从哪里开始剪   background-clip:text;
+背景从哪里开始 background-origin: border-box  padding-  content-
 
+行列布局，部分固定，部分自适应的几种方法
 
+background-size  cover和contain
 
+<!DOCTYPE html>不写->怪异/混杂盒模型
+标准盒模型width=content  和   （IE6之前的版本有）怪异盒模型width=content+padding+border
 
+弹性盒模型  分配父元素的剩余空间
 
+动画：变形、过渡、动画
+一、变形
+tranform:scale()  rotate  空格分隔
+tranform:rotate(40deg);旋转
+tranform-origin:10px 10px;旋转圆点
 
+tranform：translate(100px,58px); 平移
+    tranform：translate(-50%,-50%); 不知道宽高用这种方法行级元素行内居中，-50%自己的宽度和高度一半
+        块级？
+
+tranform:scale(倍数)  缩放   scaleX   scaleY
+
+tranform:skew(X,Y)  切变   45deg
+
+二、过渡
+transition:width 2s(做动画的时间) linear(动画形式)  2s(延迟时间),background,...
+  transition:all 2s linear全部有变化的属性都渐变
+
+三、动画
+animation:xx  5s(执行时间)  ease  forwards(动画执行完停在最后一帧);
+
+关键帧 @-webkit-keyframes xx{
+             0%{ }
+             50%{ }
+             100%{ }
+       }
+
+@-webkit-keyframes zz{
+            from{   }
+            to{    }
+       }
+
+7-21
+animation.css
+
+3D
+http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/
+先旋转后位移  和 先位移后旋转不一样  ，Z轴加在物体上，会随物体转
+
+图片预加载  存在内存中  var oImg=new image();   oImg.src=      ;  oImg.onload(){  }
+
+translateZ的功能就是让元素在自己的眼前或近或远
+
+perspective属性有两种书写形式，一种用在舞台元素上（动画元素们的共同父辈元素）；
+           第二种就是用在当前动画元素上，与transform的其他属性写在一起
+perspective: 600px;
+transform: perspective(600px) rotateY(45deg);
+
+transform-style: preserve-3d
+一般而言，该声明应用在3D变换的兄弟元素们的父元素上，也就是舞台元素。
 
 
 
