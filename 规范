@@ -1,0 +1,25 @@
+命名
+id,class  "hello-world" 中划线        name   helloWorld驼峰式
+
+行级元素内不嵌套块级元素        尽可能减少div嵌套
+
+可以使用data-前缀自定义属性
+内联加的属性用getAttribute获取
+js里的dom结构加不到dom里
+
+fieldset标签  label
+
+sprite精灵图
+
+使用data()存储变量
+
+
+切图{
+1.规划项目目录
+2.哪些东西是公共的？
+3.需要引用哪些第三方插件？
+4.分析psd图
+    4.1 分析结构
+    4.2哪些部分可以封装模块？
+5.配合后台人员
+}

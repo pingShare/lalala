@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width:800px;
+    height: 500px;
+    margin: 100px auto;
+    position: relative;
+}
+#images img{
+    width:800px;
+    height: 500px;
+    display: none;
+}
+#images .select{
+    display: block;
+}
+#num{
+    list-style:none;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+#num li,#arrows div{
+    float:left;
+    width:15px;
+    height: 15px;
+    margin-right: 6px;
+    color: white;
+    background: #000;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+#arrows{
+    position: absolute;
+    left: 3px;
+    bottom: 5px;
+}
+#num .select{
+    background-color: orange;
+}

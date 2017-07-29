@@ -51,22 +51,23 @@
             width: 6px;
             background-color: #000;
             position: absolute;
-            left: 683px;
+            left: 200px;
             transform-origin:bottom;
+
         }
         #hour{
             height: 100px;
-            top: 200px;
+            top: 100px;
             width: 9px;
         }
         #minute{
             height: 130px;
-            top: 170px;
+            top: 70px;
             width: 6px;
         }
         #second{
             height: 150px;
-            top: 150px;
+            top: 50px;
             width: 4px;
         }
         #clock li:nth-child(5n+1){
@@ -78,18 +79,18 @@
 <body>
 <div id="clock">
     <ul id="ul1">
+       <!-- <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-        <li></li>
-        <li></li>
+        <li></li>-->
     </ul>
-
+    <div id="hour"></div>
+    <div id="minute"></div>
+    <div id="second"></div>
 </div>
-<div id="hour"></div>
-<div id="minute"></div>
-<div id="second"></div>
+
 
 
 <script>
@@ -97,13 +98,14 @@
     var oHour = document.getElementById("hour");
     var oMinute = document.getElementById("minute");
     var oSecond = document.getElementById("second");
+    var oUl = document.getElementById('ul1');
     var lis = '';
     for(var i=0; i<60; i++){
 //            var str = document.createElement("<li></li>");
 //            aUl.appendChild(str);
         lis += '<li style="transform: rotate('+ i*6 +'deg)"></li>';
     }
-    oClock.innerHTML = lis;
+    oUl.innerHTML = lis;
 run();
 
   setInterval(run,1000);

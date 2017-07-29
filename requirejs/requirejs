@@ -1,0 +1,41 @@
+引入js文件有顺序
+
+ transform:translate(-50%,-50%);
+
+
+弹出层
+只有AMD才能require引入，引用之前确认一下
+怎么判断数组？
+arr.constructor  ==Array?是数组
+array instanceof Array
+
+类和对象：{
+改变this指向{
+apply 第一个参数是this要指向的对象，后面参数都写在一个数组里
+bind  不会立即调用，要调用加括号，把参数写在括号里aa.bind(obj)('lisi',18);
+call  第一个参数是this要指向的对象，右面参数有几个写几个
+}
+}
+
+入口文件写的是什么
+require([引用的文件名，...],function)
+
+定义模块
+define([],function)
+
+原理：
+1.动态创建js文件
+
+2.defer   解析下载完所有的才执行
+async
+使用了这两个异步加载，不能用document.write
+
+
+3.另一种模块化开发 seajs
+
+AMD和CMD
+AMD异步模块定义
+CMD通用模块定义
+CMD依赖就近，AMD依赖前置
+
+
