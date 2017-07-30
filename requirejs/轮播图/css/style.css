@@ -2,27 +2,30 @@
     margin: 0;
     padding: 0;
 }
-#container{
-    width:800px;
-    height: 500px;
-    margin: 100px auto;
+ul{
+    list-style: none;
+}
+
+.carousel-container{
+    width:500px;
+    height: 350px;
     position: relative;
 }
-#images img{
-    width:800px;
-    height: 500px;
+.carousel-images img{
+    width:500px;
+    height: 350px;
     display: none;
 }
-#images .select{
+.carousel-images .select{
     display: block;
 }
-#num{
+.carousel-num{
     list-style:none;
     position: absolute;
     right: 10px;
     bottom: 5px;
 }
-#num li,#arrows div{
+.carousel-num li,.carousel-arrows div{
     float:left;
     width:15px;
     height: 15px;
@@ -33,11 +36,35 @@
     text-align: center;
     cursor: pointer;
 }
-#arrows{
+/*.carousel-arrows{
     position: absolute;
     left: 3px;
     bottom: 5px;
-}
-#num .select{
+}*/
+.carousel-num .select{
     background-color: orange;
+}
+
+/*添加arrowpos,相当于添加一个类*/
+.carousel-arrows .carousel-left.bottom{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.carousel-arrows .carousel-right.bottom{
+    position: absolute;
+    left: 35px;
+    bottom: 10px;
+}
+.carousel-arrows .carousel-left.center{
+    position: absolute;
+    top: 50%;
+    /*margin-top: -10px;*/
+    left: 10px;
+}
+.carousel-arrows .carousel-right.center{
+    position: absolute;
+    top: 50%;
+    /*margin-top: -10px;*/
+    right: 10px;
 }
