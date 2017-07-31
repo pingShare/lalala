@@ -1,0 +1,25 @@
+
+em相对于父元素的font-size的倍数，其他的width=5em,height=5em也适用em
+rem  root,当对于html放大
+
+media 媒体查询  media='print'
+常用像素点breakpoint 1200 992 768
+css3:
+@media(查询条件){
+    切换代码段
+}
+orientation 横屏landscape  竖屏portrait
+
+
+框架{
+ bootstrap  3
+ foundation
+}
+
+字段垂直居中
+img替换元素  有一些自带样式  网页中图片要考虑宽高一起变
+img max-width:100% 防止图片失真
+padding也可以把高度撑开  padding-top:(height/width)%
+
+
+window.onresize

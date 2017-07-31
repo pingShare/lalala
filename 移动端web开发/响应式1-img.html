@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            width: 960px;
+            height: 100px;
+            color: #f9f9f9;
+            background-color: #cccccc;
+            margin:30px auto;
+            text-align: center;
+            line-height: 100px;
+        }
+        figure img{
+            margin:0 auto;
+            display: block;
+        }
+        article{
+            width: 960px;
+            margin:0 auto;
+            text-align: center;
+            /*height: 300px;    !*给article 设置高度(出现问题：页面拉长之后，height仍是300px，不对)或者  用伪元素*!*/
+        }
+        article::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #left{
+            background-color: #00ff00;
+            width: 600px;
+            height: 300px;
+            float: left;
+            display: table;
+        }
+        #right{
+            background-color: #ffff00;
+            width: 340px;
+            float: right;
+            height: 300px;
+            display: table;
+        }
+        #right p,#left p{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        @media (max-width: 959px) {
+            h3,article{
+                width:100%;
+            }
+            #left{
+                width:67%;
+            }
+            #right{
+                width:30%;
+            }
+            img{
+                width:100%;
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 479px) {
+            #left,#right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>页头</h3>
+    </header>
+    <nav>
+        <h3>导航</h3>
+    </nav>
+    <figure>
+        <img src="01_s_2x.jpg" alt="">
+    </figure>
+    <article>
+        <section id="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat.
+                Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+        </section>
+        <section id="right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat.
+                Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+        </section>
+    </article>
+    <footer>
+        <h3>页脚</h3>
+    </footer>
+</body>
+</html>
