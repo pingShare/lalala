@@ -43,24 +43,21 @@ define(['jquery'],function ($) {
         $("li",this.$num).eq(0).addClass("select");
         $('li',this.$num).on('mouseover',function (e) {
                 this.nowindex = $(e.target).index();
-                $('li',this.$num).eq(this.nowindex).addClass('select').siblings().removeClass('select');
-                $('img',this.$images).eq(this.nowindex).addClass('select').siblings().removeClass('select');
+            changeImg();
         }.bind(this));
         this.$left.on('click',function () {
             this.nowindex--;
             if (this.nowindex==-1){
                 this.nowindex = this.defaultSettings.imgAttr.length-1;
             }
-            $('li',this.$num).eq(this.nowindex).addClass('select').siblings().removeClass('select');
-            $('img',this.$images).eq(this.nowindex).addClass('select').siblings().removeClass('select');
+            changeImg();
         }.bind(this));
         this.$right.on('click',function () {
             this.nowindex++;
             if (this.nowindex==this.defaultSettings.imgAttr.length){
                 this.nowindex = 0;
             }
-            $('li',this.$num).eq(this.nowindex).addClass('select').siblings().removeClass('select');
-            $('img',this.$images).eq(this.nowindex).addClass('select').siblings().removeClass('select');
+            changeImg();
         }.bind(this));
 
         this.$container.hover(function () {
@@ -78,7 +75,10 @@ define(['jquery'],function ($) {
                 this.$right.trigger("click");
             }.bind(this),this.defaultSettings.speed)
         }
-
+        function changeImg() {
+            $('li',this.$num).eq(this.nowindex).addClass('select').siblings().removeClass('select');
+            $('img',this.$images).eq(this.nowindex).addClass('select').siblings().removeClass('select');
+        }
     };
 
 
