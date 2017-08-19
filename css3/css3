@@ -18,15 +18,15 @@ E::before{
 
 通用样式  clearfix  阻止塌陷
 .clearfix::after{
-  content:
+  content:“”；
   clear:both;
-  diaplay:block;
+  diplay:block;
 }
 
 
-计划开始计划...{
+省略剩下内容...{
     white-space：nowrap  不换行
-    overflow:hiden     超出部分隐藏
+    overflow:hidden     超出部分隐藏
     text-overflow:ellipsis   超出显示省略号
 }
 
@@ -43,19 +43,19 @@ background-size  cover和contain
 
 弹性盒模型  分配父元素的剩余空间
 
-动画：变形tranform、过渡transition、动画animation
+动画：变形transform、过渡transition、动画animation
 一、变形
-tranform:scale()  rotate  空格分隔
-tranform:rotate(40deg);旋转
-tranform-origin:10px 10px;旋转圆点
+transform:scale()  rotate  空格分隔
+transform:rotate(40deg);旋转
+transform-origin:10px 10px;旋转圆点
 
-tranform：translate(100px,58px); 平移
-    tranform：translate(-50%,-50%); 不知道宽高用这种方法行级元素行内居中，-50%自己的宽度和高度一半
+transform：translate(100px,58px); 平移
+    transform：translate(-50%,-50%); 不知道宽高用这种方法行级元素行内居中，-50%自己的宽度和高度一半
         块级？
 
-tranform:scale(倍数)  缩放   scaleX   scaleY
+transform:scale(倍数)  缩放   scaleX   scaleY
 
-tranform:skew(X,Y)  切变   45deg
+transform:skew(X,Y)  切变   45deg
 
 二、过渡
 transition:width 2s(做动画的时间) linear(动画形式)  2s(延迟时间),background,...
@@ -80,7 +80,7 @@ animation.css
 
 3D
 http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/
-先旋转后位移  和 先位移后旋转不一样  ，Z轴加在物体上，会随物体转
+先旋转后位移  和 先位移后旋转不一样  ， Z轴加在物体上，会随物体转
 
 图片预加载  存在内存中  var oImg=new image();   oImg.src=      ;  oImg.onload(){  }
 
@@ -91,6 +91,29 @@ perspective属性有两种书写形式，一种用在舞台元素上（动画元
 
 transform-style: preserve-3d
 一般而言，该声明应用在3D变换的兄弟元素们的父元素上，也就是舞台元素。
+
+
+旋转的照片墙
+所有带src属性的都有onload 事件  先写onload再写src
+如果把js写到head里 用window.onload= function..
+没有获取到因为只加载了dom结构，没有加载完资源文件
+
+常量都用大写，类名首字母大写
+width:100%相对于父元素，父元素也要加100%
+box-shadow：水平 竖直  模糊程度  外延值  颜色
+事件委托 冒泡
+sort
+
+
+
+
+
+
+
+
+
+
+
 
 
 

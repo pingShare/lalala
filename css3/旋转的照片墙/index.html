@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            /*html  body   html,body*/
+            width:100%;
+            height:100%;
+        }
+        #container{
+            background: url("img/bg.jpg");
+            width:100%;
+            height:100%;
+            position: relative;
+        }
+        #container .img{
+            width: 125px;
+            height: 125px;
+            border:5px solid #FFFFFF;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            transition: all 1s ease;
+            top: -200px;
+            left: -200px;
+            cursor: pointer;
+        }
+        #container span{
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: all 1s ease;
+        }
+        #prev,#next{
+            width: 60px;
+            height: 60px;
+            /*line-height: 60px;*/
+            background-color: #FFFFFF;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:50%;
+            cursor: pointer;
+            display: none;
+        }
+        #prev{
+            background-image: url(img/prev.png);
+            left: 0;
+            border-radius: 0 8px 8px 0;
+        }
+        #next{
+            background-image: url(img/next.png);
+            right: 0;
+            border-radius:  8px 0 0 8px ;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <div id="prev"></div>
+    <div id="next"></div>
+    <script>
+        var NUM = 24,ROW = 4, COL = 6,THUMBS_WIDTH = 125,THUMBS_HEIGHT = 125;
+        var count = 0;
+        var oDiv;
+        var oContainer = document.getElementById("container");
+        var oPrev = document.getElementById("prev");
+        var oNext = document.getElementById("next");
+        var aImg;
+        var fDivWidth,fDivHeight,fGapCol,fGapRow;
+
+        for(var i=0; i<NUM; i++){
+            var oImg = new Image();
+            oImg.onload = function () {
+                count++;
+                if (count == NUM*2){
+                    loadSuccess();
+                }
+            };
+            oImg.src = "img/"+(i+1)+".jpg";
+
+            var oThumbsImg = new Image();
+            oThumbsImg.onload = function () {
+                count++;
+                if (count == NUM*2){
+                    loadSuccess();
+                }
+            };
+            oThumbsImg.src = "img/thumbs/"+ (i+1)+".jpg";
+
+        }
+        var index=0;
+        function loadSuccess() {
+             for(i=0; i<ROW; i++)
+                 for (j=0; j<COL; j++)
+                {
+                    index++;
+                oDiv = document.createElement("div");
+                oDiv.className = "img";
+                oDiv.innerHTML = "<span></span>";
+                oDiv.style.backgroundImage = 'url(img/thumbs/'+ index+'.jpg)';   //字符串拼接
+                oContainer.appendChild(oDiv);
+    //            oDiv.style.top = "-200px";
+    //            oDiv.style.left = "-200px";
+    //            oDiv.style.transition =
+                    oDiv.pos = {
+                        row:i,
+                        col:j
+                    };
+                    oDiv.index = index;
+                }
+            aImg = oContainer.getElementsByTagName("div");
+//            var aImg = oContainer.getElementsByClassName("img");
+//             aImg.index = index;
+            fDivWidth = aImg[0].offsetWidth;
+            fDivHeight = aImg[0].offsetHeight;
+            fGapCol = (oContainer.offsetWidth-fDivWidth*COL)/(COL+1);
+           fGapRow = (oContainer.offsetHeight-fDivHeight*ROW)/(ROW+1);
+                for(var i=23; i>=0; i--)
+                {
+                    aImg[i].style.top = (fDivHeight+fGapRow)*aImg[i].pos.row + fGapRow + 'px';
+                    aImg[i].style.left = (fDivWidth+fGapCol)*aImg[i].pos.col + fGapCol + 'px';
+                    aImg[i].style.transform = "rotate("+ (Math.random()*40-20) +"deg)";
+                    aImg[i].style.transitionDelay = (NUM-i)*100+'ms';
+                }
+
+            var oSpan = document.createElement("span");   //?
+        }
+        var oSpan;
+        var bFlag = true;   //要在点击前判断，true为散开，false为合并
+//       fGapCol = (oContainer.offsetWidth-fDivWidth*COL)/(COL+1);
+//        fGapRow = (oContainer.offsetHeight-fDivHeight*ROW)/(ROW+1);
+        oContainer.onclick = function (e) {
+
+            var fSideWidth = (oContainer.offsetWidth-oDiv.offsetWidth*COL)/2;
+            var fSideHeight = (oContainer.offsetHeight - oDiv.offsetHeight*ROW)/2;
+            fDivWidth = aImg[0].offsetWidth;
+            fDivHeight = aImg[0].offsetHeight;
+
+            aImg = oContainer.getElementsByTagName("div");
+
+            if (this != e.target){  //点击的不是container,是div的border 或者span
+                if(bFlag) { //散开要合并
+                    for (var i = 0; i < NUM; i++) {
+                        aImg[i].style.transform = "rotate(0)";
+                        aImg[i].style.transitionDelay = '0ms';
+                        aImg[i].style.borderWidth = "1px";
+                        aImg[i].style.top = (fSideHeight + THUMBS_HEIGHT * aImg[i].pos.row ) + 'px';
+                        aImg[i].style.left = (fSideWidth + THUMBS_WIDTH * aImg[i].pos.col) + 'px';
+
+                        oSpan = aImg[i].getElementsByTagName('span')[0];
+                        oSpan.style.opacity = 1;
+                        var imgURL;
+                        if (e.target.className == "img"){
+                            imgURL = e.target.index;
+                        }
+                        else  //span
+                        {
+                            imgURL = e.target.parentNode.index;
+                        }
+                        oSpan.style.backgroundImage = "url(img/"+ imgURL +".jpg)";
+                        oSpan.style.backgroundPosition = -THUMBS_WIDTH*aImg[i].pos.col+'px '+ (-THUMBS_HEIGHT * aImg[i].pos.row) +'px';  //两个px中间要有空
+                    nowindex = imgURL;
+                        //显示左右按钮
+                    oPrev.style.display = oNext.style.display = "block";
+                    }
+                }
+                else {//合并要散开
+                    console.log(12);
+                    for (var i=0; i<NUM; i++) {
+                        aImg[i].style.top = (fDivHeight+fGapRow)*aImg[i].pos.row + fGapRow + 'px';
+                        aImg[i].style.left = (fDivWidth+fGapCol)*aImg[i].pos.col + fGapCol + 'px';
+                        aImg[i].style.transform = "rotate("+ (Math.random()*40-20) +"deg)";
+                        aImg[i].style.borderWidth = "5px";
+                        oSpan = aImg[i].getElementsByTagName('span')[0];
+                        oSpan.style.opacity = 0;
+                        oPrev.style.display = oNext.style.display = "none";
+                    }
+                }
+                bFlag = !bFlag;
+            }
+        };
+
+        oPrev.onclick = oNext.onclick =function () {
+            if(this == oPrev){
+                nowindex--;
+                if(nowindex == 0){
+                    nowindex = NUM;
+                }
+            }else{
+                nowindex++;
+                if(nowindex == NUM+1){
+                    nowindex = 1;
+                }
+            }
+            /*sort方法
+            var arr = [];//0~23
+            for(var i=0; i<NUM; i++){
+                arr.push(i);
+            }
+            arr.sort(function(a, b){
+                return Math.random() - 0.5;
+            });
+            for(var i=0; i<arr.length; i++){
+                var oSpan = aImg[arr[i]].getElementsByTagName("span")[0];
+                oSpan.style.transitionDelay = (i + 1) * 40 + "ms";
+                oSpan.style.backgroundImage = "url(img/"+ nowindex +".jpg)";
+            }*/
+           for(i=0;i<NUM; i++){
+                oSpan = aImg[i].getElementsByTagName("span")[0];
+                oSpan.style.backgroundImage = "url(img/"+ nowindex +".jpg)";
+                oSpan.style.backgroundPosition = -THUMBS_WIDTH*aImg[i].pos.col+'px '+ (-THUMBS_HEIGHT * aImg[i].pos.row) +'px';  //两个px中间要有空
+            }
+        }
+
+
+        /*
+        存在问题：
+        切换的快，图片切换不过来 ->定时器？
+        有的图有慢速效果，有的没有
+         */
+    </script>
+</body>
+</html>
