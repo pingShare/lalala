@@ -1,0 +1,79 @@
+html、css
+meta  shortcut  href=favicon.ico
+
+行级元素margin只能设置左右，不能设置上下,padding-top不能设置
+
+display:none inline block inline-block  table  table-cell  -webkit-box,flex
+
+nth-child(n)n从0开始，括号内数从1开始
+
+clearfix 解决元素塌陷   写死宽高
+
+盒模型{
+标准盒模型
+怪异盒模型
+}
+
+外边距合并
+
+居中{
+    行级元素在块级元素居中
+    text-align:center   height=line-height
+    块-块
+    margin:0 auto
+    定位 top50% left50%
+    直接用margin
+    宽高不确定时transform:translate(-50% -50%)
+}
+
+background-size怎么写 background:#ccc url() no-repeat 50px 50px(position)/cover fixed;
+
+
+js
+变量没有初始值返回undefine 对象找不到null
+内置对象
+类名开头大写
+
+append insertbefore...
+事件冒泡、事件捕获？先捕获后冒泡
+事件委托？
+对后生成的元素的事件绑定问题
+
+jquery
+
+
+requirejs 模块化加载和异步加载
+
+css3
+
+html5
+跨域
+
+
+移动端
+click tape
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
