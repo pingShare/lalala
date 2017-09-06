@@ -3,11 +3,11 @@ DOM树，渲染树//？
 JQuery 都写在文档就绪函数中
 prev + next 选中后面一个兄弟   prev ~ sibling 后面所有兄弟
 target  URL会变，浏览器产生前后的 按钮
-原生对象使用原生方法，JQ对象使用     可以转换原生->JQ对象 $(原生)   jq->原生 原生[0]或.get(0)
+原生对象使用原生方法，JQ对象使用     可以转换原生->JQ对象 $(原生)   jq->原生 jq[0]/或.get(0)
 
 搜索框事件用onkeyup，其他两个取到的是输入框中的前一个值
 :nth-child 括号里的数从1开始
-<button  type=button>ff  写上type，button不提交
+<button type=button>ff  写上type，button不提交
 
 checkbox 属性用prop，不用attr   //手册
 
@@ -16,7 +16,7 @@ jquery 不写单位默认px
 只有返回jquery对象的才能进行链式操作
 
 width:content  inner:content+pading  out:content+padding+border和选择性的margin   outerwidth(  ,true):margin
-距离：offset：相对于文档  position，offsetparent相对于离他最近的祖先元素
+距离：offset：相对于文档    position,offsetparent(jq方法)相对于离他最近的已定位的祖先元素
 
 A.replacewith(B)  用B替换A      A.replaceAll(B) A替换所有的B
 
@@ -31,13 +31,12 @@ $==JQuery
 
 7-18
 e.target事件源  和this 区别 this===e.currentTarget给绑定事件的元素
-focus 不支持时间冒泡   focusin支持时间冒泡
+focus 不支持事件冒泡   focusin支持事件冒泡
 
 cookie   document.cookie  过期时间expires  cookie的key是唯一的
 缺点：不安全、拖慢速度、最多4K
 
-7-19
-
+parents和closest？
 
 
 

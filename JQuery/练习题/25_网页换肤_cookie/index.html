@@ -29,25 +29,25 @@
     </div>
 
 
-	<script src="jquery-1.11.2.js"></script>
-	<script src="jquery.cookie.js"></script>
+	<script src="js/jquery-1.11.2.js"></script>
+	<script src="js/jquery.cookie.js"></script>
 	<script>
 		$(function(){
-			//点击精灵图
-			if ($.cookie('skin')){
-                var skin = $.cookie("skin");
-                $('#'+skin).addClass('selected').siblings().removeClass("selected");
-                //$('#'+skin)和$(this)不一样，skin能存住点击的选项，this只点击后才有
+		    if($.cookie('skin')){
+             var skin = $.cookie('skin');
+               console.log(skin);
                 $('#cssfile').attr('href','css/'+skin+".css");
+                $('#'+skin).addClass('selected').siblings().removeClass('selected');
 			}
-
-			$('#skin li').on('click',function () {
-			    var skin = $(this).attr('id');
-                console.log($(this));
-			    $.cookie('skin',skin,{expires:12});
-				$(this).addClass('selected').siblings().removeClass("selected");
- 				$("#cssfile").attr("href",'css/'+skin+".css");
+		    $('#skin li').on('click',function () {
+                var $fileName = $(this).attr('id');
+                $('#cssfile').attr('href','css/'+$fileName+".css");
+                $(this).addClass('selected').siblings().removeClass('selected');
+                $.cookie('skin',$fileName,{expires:1});
+//                console.log($fileName);
             });
+
+
 		});
 	</script>
 </body>
