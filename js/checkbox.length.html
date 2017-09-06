@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" value="ghkm" checked="checked" name="check">
+<input type="checkbox" value="jjj2" checked="checked" name="check">
+<input type="checkbox" value="xdf3" checked="checked" name="check">
+<input type="checkbox" value="4" name="check">
+<input type="button" id="btn" value="shuchu">
+
+
+<div id="aa">
+    <p>vvvgg</p>
+    <p>gfff</p>
+    <div>ffff</div>
+</div>
+
+<script>
+    var oBtn = document.getElementById("btn");
+    var aCheck = document.getElementsByName("check");
+//    o开头和a开头的区别
+    var aa = document.getElementById("aa");
+    var aDiv = aa.getElementsByTagName("p");
+    console.log(typeof aa);
+    console.log(typeof aDiv);
+ /*   console.log(aCheck);
+    console.log(oBtn);*/
+
+    oBtn.onclick = function () {
+        var items = [];
+        for(var i=0; i<aCheck.length; i++){
+            if(aCheck[i].checked){
+//               console.log(aCheck[i].value);
+                items.push(aCheck[i].value);
+            }
+        }
+        console.log(items.length);
+    };
+    var oCh
+</script>
+</body>
+</html>
