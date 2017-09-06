@@ -1,0 +1,24 @@
+CDN?
+原生的事件：touchstart、touchend、touchmove、touchcancel
+移动端常用tap，  button会有两到三秒的延迟
+tap点透问题  隐藏时候才会有点透问题      fastclick解决点透问题
+swipeleft左滑  swiperight右滑   >30px才被认为有滑动
+
+textarea  resize:none不能改变文本框的大小
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,6 +20,42 @@ orientation 横屏landscape  竖屏portrait
 img替换元素  有一些自带样式  网页中图片要考虑宽高一起变
 img max-width:100% 防止图片失真
 padding也可以把高度撑开  padding-top:(height/width)%
+伪类撑开
 
 
 window.onresize
+没有高度的div怎么填充高度
+
+网站如何部署到服务器
+
+假期{
+    做一个响应式网站  个人网站  themeforest  envatomarket
+    响应式:自学bootstrap
+    把网站部署到服务器
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
