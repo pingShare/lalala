@@ -1,0 +1,59 @@
+function首字母大写 类名
+body 8pxmargin  p 16px margin
+样式重置网站normalize
+
+便于开发者阅读，利于爬虫和机器。。。
+
+文件的上面引入 html5shiv.js 让IE678支持h5   html5shiv.js 引用代码必须放在 <head> 元素中,要先加载
+
+JSON 前后端传值的一种格式
+stringify  把对象转成字符串
+parse   把字符串转化成对象
+在线校验JSON格式工具
+
+深拷贝
+var str1 = JSON.stringify(obj1);
+var obj3 = JSON.parse(str1);
+
+JSON有兼容性->引入json2.js，让早期的浏览器也支持
+
+eval能解析所有的字符串，不安全
+JSON只能解析JSON格式的字符串
+
+attr和prop？
+对于html元素本身就带有的固有属性，用prop方法  checkbox也要用prop
+我们自定义的DOM属性，用attr
+
+自定义属性data-开头
+h5里dataset.属性
+
+异步加载
+defer
+async
+
+历史管理
+location.hash
+history.pushState
+
+应用缓存
+manifest    .appcache
+
+本地存储   界面间传值
+localstorage  一直存在，浏览器中手动删除，代码.removeItem清楚一个，全部清除用clear
+获取用getItem
+sessionstorage  浏览器关闭就消失
+
+localstorage sessionstorage  cookie session 区别
+
+webworker不能进行DOM操作
+
+websocket
+
+
+跨文档消息通道
+
+
+
+
+
+
