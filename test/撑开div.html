@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+           /* width: 500px;
+            height: 500px;*/
+            /*padding: 100px;*/
+            background-color: yellow;
+            /*display: table;*/
+            /*overflow:hidden; 没有用单用有用*/
+            position: relative;
+            /*clear: both;*/
+            /*float:float-in-float;*/
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            /*float:left;*/
+            /*margin-left: 20px;*/
+            position: absolute;
+            top: 20px;
+            /*clear: both;*/
+            /*margin: 100px;*/
+            display:table-cell;
+        }
+        #div3{
+            width: 200px;
+            height: 200px;
+            /*float: left;*/
+            left: 500px;
+            position: absolute;
+            background-color: greenyellow;
+            /*clear: both;无论是在父元素还是子元素上，只单独加这一个不好用*/
+            display:table-cell;
+
+        }
+
+        .clearfix::after{
+            display: block;
+            content: '';
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <!--<br style="clear:both;" />-->
+</div>
+
+</body>
+</html>
