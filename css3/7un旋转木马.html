@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转木马</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            perspective: 1000px;
+            perspective-origin: 50% 7%;
+        }
+        #container{
+            width: 125px;
+            height: 125px;
+            position: relative;
+            margin: 200px auto;
+            transform-style:preserve-3d;
+            transition: all 1s linear;
+        }
+        #container img{
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            transition:all 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <!--为加快图片的加载，可以使用预加载-->
+    <div id="container"> </div>
+
+    <script>
+        var oContainer = document.getElementById("container");
+        var count = 0;
+        for (i=0; i<9; i++){   <!--为加快图片的加载，可以使用预加载-->
+            var oImg = new Image();
+           oImg.onload = function () {    // onload要写在.src前面
+
+                count++;
+                if (count==9){
+                    LoadSuccess();
+                }
+
+            };
+            oImg.src = "images/"+(i + 1)+".jpg";    //注意拼接字符串
+            oContainer.appendChild(oImg);
+        }
+
+       var LoadSuccess = function () {
+           var aImg = oContainer.getElementsByTagName("img");
+           for(var i=0; i<aImg.length; i++){
+               aImg[i].style.transitionDelay = i*100+"ms";
+               aImg[i].style.transform = "rotateY("+ (i+1)*40+"deg) translateZ(180px)";
+           }
+       }
+        var num = 0;
+        oContainer.onclick = function(){
+            num++;
+            oContainer.style.transform = "rotateY("+ num * 40 +"deg)";
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图练习1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width:800px;
+            height: 500px;
+            margin: 100px auto;
+            position: relative;
+        }
+        #images img{
+            width:800px;
+            height: 500px;
+            display: none;
+        }
+        #images .select{
+            display: block;
+        }
+        #num{
+            list-style:none;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+        }
+        #num li,#arrows div{
+            float:left;
+            width:15px;
+            height: 15px;
+            margin-right: 6px;
+            color: white;
+            background: #000;
+            line-height: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #arrows{
+            position: absolute;
+            left: 3px;
+            bottom: 5px;
+        }
+        #num .select{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="images">
+        <img src="../js/img/1.jpg" alt="" class="select">
+        <img src="../js/img/2.jpg" alt="">
+        <img src="../js/img/3.jpg" alt="">
+        <img src="../js/img/4.jpg" alt="">
+        <img src="../js/img/5.jpg" alt="">
+        <img src="../js/img/6.jpg" alt="">
+        <img src="../js/img/7.jpg" alt="">
+        <img src="../js/img/8.jpg" alt="">
+    </div>
+    <ul id="num">
+        <li class="select">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <div id="arrows">
+        <div id="left">&lt;</div>
+        <div id="right">&gt;</div>
+    </div>
+</div>
+<script src="jquery-1.11.2.js"></script>
+<script>
+
+</script>
+</body>
+</html>

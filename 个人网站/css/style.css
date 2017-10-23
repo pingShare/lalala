@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/*li{
+    list-style: none;
+}*/
+/*header*/
+header{
+    height: 680px;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    text-align: center;
+    background: url(img/home.jpg);filter:alpha(opacity=70);
+    background-attachment: fixed;
+}
+
+#header-sec{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50%;
+    border:5px solid rgb(255, 15, 101);
+}
+header h3{
+    font-weight:800;
+    color: white;
+    cursor: pointer;
+}
+h2{
+    color: #FFFFFF;
+}
+h1{
+    font-weight: 900;
+    color: rgb(255, 15, 101);
+}
+header span,.email span{
+    display: block;
+    width: 220px;
+    height: 45px;
+    line-height: 45px;
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin:0 auto;
+    border:1px solid rgb(255, 15, 101);
+    border-radius: 6px;
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    cursor: pointer;
+}
+
+.pink-circle{
+    margin:0 auto;
+     width: 60px;
+     height: 60px;
+     background-color:rgb(255, 15, 101);
+     border-radius: 50% 50%;
+     border:2px solid white;
+    cursor: pointer;
+ }
+.transparent-circle{
+    margin:0 auto;
+    width: 60px;
+    height: 60px;
+    background-color:transparent;
+    border-radius: 50% 50%;
+    border:2px solid white;
+    cursor: pointer;
+}
+/*know me*/
+.know-me{
+    height: 450px;
+    padding: 40px;
+}
+
+.knowme-container{
+    margin:0 auto;
+    height: 360px;
+}
+.detail{
+    font-weight:500;
+    line-height: 25px;
+}
+
+#skill{
+    height: 450px;
+    background-image:url(img/skill.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#download{
+    height: 400px;
+}
+
+#skill-container{
+    height: 100%;
+    padding:5%;
+    background: url(img/15.png),repeat;
+}
+#skill-container div{
+    height: 289px;
+}
+.myskill p{
+    color: white;
+    margin:80px 0;
+}
+.span{
+    width: 200px;
+    color: white;
+    display: block;
+    height: 45px;
+    cursor: pointer;
+    line-height: 45px;
+    text-align: center;
+    font-size: larger;
+    background-color: grey;
+}
+h4{
+    color: rgb(255, 15, 101);
+}
+
+/*project*/
+.project{
+    height: 650px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#project-container{
+    margin:0 auto;
+    width: 80%;
+    height: 100%;
+}
+#project-container div{
+    padding: 0;
+ }
+.project img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.project p{
+    padding:30px 0;
+}
+
+/*para*/
+#para{
+    height: 400px;
+    padding:30px 60px;
+}
+#para-container{
+    background-color: #CCCCCC;
+    height: 100%;
+    padding: 10px 3%;
+}
+.list,.detailpara{
+    height: 300px;
+    margin-top: 20px;
+}
+.list  a:hover{
+    text-decoration: none;
+}
+
+/*connect*/
+#connect-me{
+    background-color: rgba(0, 0, 0, 0.80);
+}
+#connect-me img{
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    display: block;
+}
+#connect-container{
+    z-index: 3;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    /*background: rgba(0, 0, 0, 0.80);*/
+}
+#connect-container h1{
+    padding:60px 0;
+}
+.email input,.email textarea{
+    border:1px solid white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.80);
+    width: 80%;
+    height: 40px;
+    margin: 7px 0;
+    color: white;
+}
+.email textarea{
+    height: 100px;
+}
+.email span{
+    margin-left: 10%;
+}
+.address{
+    text-align: left;
+    padding-left: 10%;
+}
+.address h2{
+    color: rgb(255, 15, 101);
+    margin-bottom: 50px;
+}
+.address h4{
+    display: inline-block;
+}
+.address span{
+    color: #FFFFFF;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    #project-container{
+        width: 100%;
+    }
+}
