@@ -1,0 +1,124 @@
+$m:(light:#000,dark:#fff);
+#div6{
+    height: map-values($map: $m);
+    width: map-keys($map: $m);
+    color: map-get( $m,light);
+}
+$wid: 300px; 
+
+$color : red;
+#div1 {
+    width: $wid;
+    height: $wid;
+    background-color: blue;
+    .con{
+        margin: 50px; 
+    }
+    border:{
+        left: 7px;
+        right: 3px;
+    }
+}
+@import 'base';
+a{
+    text-decoration: none;
+    &:hover{
+        color:green;
+    }
+  
+}
+#div5{
+    @extend #div1; 
+  
+}
+
+
+p {
+    width: to-lower-case($string: "SHORT");
+    height: to-upper-case($string: "tall");
+}
+#bb {
+    height: str-insert($string: "dfdfdf", $insert:'2' , $index:2);
+    margin:str-index($string: "we are here", $substring: "re") + px;
+    width: str-length($string: "ddfdg") + px;
+}
+.aa {
+    color: $color;
+    line-height: 40px;
+    &-text{
+        color: yellow;
+    }
+}
+
+
+
+#div2 {
+    margin: 0 auto;
+    width: 20px;
+}
+
+#div3 {
+    width: nth(4px 5px 2px,2);  
+    padding:append(3px 7px , 4px);
+    height: length(8px 8px 2px 10px)+px;
+}
+@mixin xx($bg:#ccc,$w:200px){
+    width:$w;
+    height:200px;
+    background: $bg;
+}
+
+#div4 {
+    // @include xx(#fff,300px);
+    @include xx(#0f0);
+}
+
+@function xx($bg){
+    @if($bg == 1){
+        @return #f00;
+    }@else if($bg == 2){
+        @return #0f0;
+    }@else{
+        @return #ccc;
+    }
+}
+
+.nn{
+    color:xx(2); //汉字有乱码
+    /* 乱码？ */
+}
+
+$column:5;
+@for $i from 1 to $column{
+    .col-lg-#{$i}{
+        width:percentage($i/100);
+    }
+}
+$icons:error warning success;
+@each $icon in $icons{
+    .icon-#{$icon}{
+        background-image: url('img/'+$icons+'.jpg');
+    }
+}
+
+$i:6;
+@while $i >0 {
+    .col-#{$i}{
+        width:percentage($i *10 /100);
+    };
+    $i : $i - 2;
+}
+
+$map:(light:#fff,dark:#f00);
+@function get-color($color){
+    @if not map-has-key($map, $color){
+       
+        /*  @warn '不存在'; */
+        @return #ccc;
+    }
+    @return map-get($map,$color);
+}
+
+.ff{
+    color: get-color(xx);  /*  @warn '不存在'; */
+}

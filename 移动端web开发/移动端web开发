@@ -9,17 +9,19 @@ css3:
     切换代码段
 }
 orientation 横屏landscape  竖屏portrait
-
+and or
 
 框架{
  bootstrap  3
  foundation
 }
 
+jquery mobile
+
 字段垂直居中
 img替换元素  有一些自带样式  网页中图片要考虑宽高一起变
 img max-width:100% 防止图片失真
-padding也可以把高度撑开  padding-top:(height/width)%
+用backgrpund-image情况下  padding也可以把高度撑开  padding-top:(height/width)%
 伪类撑开
 
 

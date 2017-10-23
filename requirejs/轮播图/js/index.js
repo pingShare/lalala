@@ -9,7 +9,8 @@ requirejs.config({
 });
 
 require(["jquery","carousel"],function ($,Carousel) {
-  var imgs1 = ['image/1.jpg','image/2.jpg','image/3.jpg','image/4.jpg'];
+
+    var imgs1 = ['image/1.jpg','image/2.jpg','image/3.jpg','image/4.jpg'];
   var settings1 = {
       imgAttr:imgs1,
       selector:'#container',
@@ -30,5 +31,7 @@ require(["jquery","carousel"],function ($,Carousel) {
     };
     var carousel2 = new Carousel(settings2);
     carousel2.init();
+
+
 });
 

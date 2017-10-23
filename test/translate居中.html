@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>translate居中</title>
+    <style>
+        #ex3_container {
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            position:relative;
+        }
+        #ex3_content {
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            -webkit-transform:translate(-50%,-50%);
+            background-color:gray;
+            color:white;
+            position:absolute;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <div id="ex3_container">
+        <div id="ex3_content">Hello World</div>
+    </div>
 </body>
 </html>

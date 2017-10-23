@@ -1,0 +1,64 @@
+XMPP   HTDOCX
+
+//汉字乱码
+写中文不对
+
+Sass
+文件编译 sass Sass/scss/style.scss:Sass/style.css
+实时编译 sass --watch Sass/scss/style.scss:Sass/style.css
+加上输出格式编译 sass --watch Sass/scss/style.scss:Sass/style.css --style compact
+注释  强制注释
+
+变量
+&代表父选择器
+.aa{
+    ...
+    &:hover{
+          //有&，转换成css后，:hover前边就没有空格  &-test变量名
+    }
+}
+
+属性嵌套
+background:{
+    color:...
+    image:...
+}
+
+#{$表示属性名的变量名}   $width,$wid
+
+mixin   参数可以有默认值
+
+继承  $extend
+
+import 引入其他文件中的样式
+
+VSCODE 插件{
+    
+}
+
+加减乘除  除法正确写法 （100px/50）
+
+sass -i   打开控制台
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

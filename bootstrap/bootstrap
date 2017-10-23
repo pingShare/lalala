@@ -1,0 +1,10 @@
+一.使用bootstrap的步骤{
+   1.<!DOCTYPE html>
+   2.导入jquery,导入css(定义了各种样式) ，导入jS(产生交互效果)，不要搞错顺序
+   3.套用class
+   4.本地测试(运行)
+}
+
+为了能够正常使用bootstrap.min.css文件的上一级目录必须要有 fonts 目录，并且里面有，不能够缺失
+
+

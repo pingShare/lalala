@@ -36,7 +36,7 @@ focus 不支持事件冒泡   focusin支持事件冒泡
 cookie   document.cookie  过期时间expires  cookie的key是唯一的
 缺点：不安全、拖慢速度、最多4K
 
-parents和closest？
+parents和closest
 
 
 

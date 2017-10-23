@@ -1,0 +1,120 @@
+@charset "UTF-8";
+#div6 {
+  height: #000, #fff;
+  width: light, dark;
+  color: #000;
+}
+
+#div1, #div5 {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  border-left: 7px;
+  border-right: 3px;
+}
+#div1 .con, #div5 .con {
+  margin: 50px;
+}
+
+img {
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+}
+
+p {
+  width: "short";
+  height: "TALL";
+}
+
+#bb {
+  height: "d2fdfdf";
+  margin: 5px;
+  width: 5px;
+}
+
+.aa {
+  color: red;
+  line-height: 40px;
+}
+.aa-text {
+  color: yellow;
+}
+
+#div2 {
+  margin: 0 auto;
+  width: 20px;
+}
+
+#div3 {
+  width: 5px;
+  padding: 3px 7px 4px;
+  height: 4px;
+}
+
+#div4 {
+  width: 200px;
+  height: 200px;
+  background: #0f0;
+}
+
+.nn {
+  color: #0f0;
+  /* 乱码？ */
+}
+
+.col-lg-1 {
+  width: 1%;
+}
+
+.col-lg-2 {
+  width: 2%;
+}
+
+.col-lg-3 {
+  width: 3%;
+}
+
+.col-lg-4 {
+  width: 4%;
+}
+
+.icon-error {
+  background-image: url("img/error warning success.jpg");
+}
+
+.icon-warning {
+  background-image: url("img/error warning success.jpg");
+}
+
+.icon-success {
+  background-image: url("img/error warning success.jpg");
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.ff {
+  color: #ccc;
+  /*  @warn '不存在'; */
+}
+
+/*# sourceMappingURL=style.css.map */

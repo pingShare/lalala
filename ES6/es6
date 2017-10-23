@@ -1,0 +1,92 @@
+局部变量作用域内处处都有定义(变量提升相当于预定义 var a;function的级别比变量高)
+js没有块级作用域
+
+let a = 5;变量不会提升、不允许重新定义、暂时性死区、块级作用域
+
+throw new Error('error...');
+
+const   是内存地址不变，不是值不变
+object.freeze(obj);  //冻结对象
+
+闭包      外部函数定义内部函数 ...
+
+
+解构赋值
+:别名
+
+模板字符串
+
+数值扩展
+num.toString(2) 十进制转成二进制
+parseInt(num2,2) 二进制转成十进制
+二进制  0b或者0B    八进制加 0o或者0O
+
+函数扩展
+
+严格模式 use strict
+严格模式下不允许使用arguments.callee()
+严格模式下，参数传参不能有初始值（默认值）
+
+箭头函数
+左边参数，右边方法体
+里面不能使用arguments
+箭头函数不能用于构造函数
+**箭头函数体内的this对象，是定义时所在的对象，而不是使用时所在的对象
+
+let a = 5; a不在window里
+
+顶层变量
+
+json数组
+key是0，1...
+let json={
+    '0':'zhangsan',
+    '1':18,
+    length:2
+}
+console.log(Array.from(json));
+
+
+类数组转化为数组
+
+
+arr.copyWithin?
+
+
+遍历数组
+for of 循环
+for(let [index,item] of arr1.entries()){
+console.log(index+':'+item)
+}
+
+entries？什么意思
+
+
+对象扩展
+
+
+symbol 数据类型 唯一的
+
+数组去重
+set里面索引和内容是相同的
+
+map
+
+
+
+proxy
+
+钩子函数？？
+
+promise??
+
+class
+
+静态方法
+
+
+
+
+
+
+

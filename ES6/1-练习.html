@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>es6</title>
 </head>
 <body>
-$END$
+<script>
+   /*简洁表示法
+   let name = 'zhangsan';
+    let obj = {
+        name,
+        age:19,
+        showName(){
+            console.log(name);
+        }
+    };
+    obj.showName();
+    console.log(obj);*/
+
+   /*属性名表达式
+   let n = 'name';
+   let age =20;
+   let obj1 = {
+       [n]:'lisi',
+       age,
+   }
+   console.log(obj1[n]);*/
+
+ /*Symbol
+   let name = Symbol();
+   let obj2 = {
+       name:'lisi',
+       age:20,
+//       name:'zhangsan',
+   };
+   obj2[name] = 'zhangsane';
+   console.log(obj2[name]);*/
+
+ /*WeakMap 只能用对象做键
+ let wm = new WeakMap();
+ wm.set({name:'zs'},'s');
+// wm.set('2','w');
+ console.log(wm);*/
+
+/* 对象的属性
+var pro = new Proxy({
+     name:"lise"
+ },{
+     get:(target, key, property)=>{
+         console.log("get");
+         return target[key];
+     },
+     set:(target,key,value,receiver)=>{
+         console.log("set");
+//         return target[key] = value;//不加这句改变不了值
+     }
+ });
+ pro.name = 'djdjjd';
+ console.log(pro.name);*/
+
+ let target = () => {
+     console.log('target fn');
+ };
+ let handler = {
+     apply(target,ctx,args){
+         console.log('apply');
+         return Reflect.apply(...arguments);
+     }
+ };
+ let pro = new Proxy(target,handler);   //第一个参数是什么类型的，pro就是什么类型
+ console.log(pro.target());
+</script>
 </body>
 </html>

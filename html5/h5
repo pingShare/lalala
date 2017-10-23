@@ -17,41 +17,52 @@ var obj3 = JSON.parse(str1);
 
 JSON有兼容性->引入json2.js，让早期的浏览器也支持
 
-eval能解析所有的字符串，不安全
+eval能解析所有的字符串，不安全？
 JSON只能解析JSON格式的字符串
 
-attr和prop？
-对于html元素本身就带有的固有属性，用prop方法  checkbox也要用prop
-我们自定义的DOM属性，用attr
+attr和prop？    .属性用prop   checkbox也要用prop  ,setAttribute用etAttribute
+能看见的属性，用attrp
 
-自定义属性data-开头
-h5里dataset.属性
+自定义属性data-开头data-aa   jquery方法：输出时.data('aa')
+h5里dataset.属性  dataset.aaBb 不能写dataset.aa-bb
 
 异步加载
 defer
 async
 
-历史管理
-location.hash
-history.pushState
+历史管理(前后按钮)
+bom方式 ：location.hash    事件 window.onhashchange()
+h5方式：history.pushState   事件 window.onpopstate()   URL不变
+组织默认行为：eg.  a不默认跳转 <a href='javascript:void(0);'{或者等于'javascript:void(0);'} ></a>
+e.preventDefault();  阻止默认行为 return false；阻止事件冒泡和默认行为
+e.stopPropagation();阻止事件冒泡
 
 应用缓存
 manifest    .appcache
 
 本地存储   界面间传值
-localstorage  一直存在，浏览器中手动删除，代码.removeItem清楚一个，全部清除用clear
+localStorage  一直存在，浏览器中手动删除，代码.removeItem清除一个，全部清除用clear
 获取用getItem
-sessionstorage  浏览器关闭就消失
+sessionStorage 方法和localStorage一样， 浏览器关闭就消失
 
-localstorage sessionstorage  cookie session 区别
+localStorage  sessionStorage  cookie session的区别
+ cookie  存储大小： 4k,   客户端
+ 另外两个  5M，不会随请求发送到后端，  存在客户端
+ session保存在服务端，
 
-webworker不能进行DOM操作
+webworker
+  不能进行DOM操作
 
 websocket
 
 
-跨文档消息通道
-
+跨文档消息通道(跨域)
+  浏览器同源策略
+  跨域范围包括  域名；主域、子域；端口号；协议不同
+跨域的方式   1.jsonp
+            2.iframe
+            3.服务器代理方式
+            4.h5  postMessage
 
 
 
