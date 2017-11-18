@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todolist</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            margin:100px auto;
+            width: 400px;
+        }
+        h1{
+            text-align: center;
+        }
+        ul{
+            margin-bottom: 20px;
+        }
+        li{
+            width: 400px;
+            height: 50px;
+            background-color: #ccc;
+            margin-top: 10px;
+            display:block;
+            position: relative;
+            line-height: 50px;
+            cursor: pointer;
+            list-style: none;
+        }
+        .select{
+            background-color: red;
+        }
+        .name{
+            position: absolute;
+            left:46px;
+        }
+        .num{
+            position: absolute;
+            right:9px;
+        }
+        .close{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+     <div id="container">  <!-- 块状怎么竖直居中 -->
+        <h1>todolist</h1>
+        <hr>
+        <div>
+            产品名称:<input type="text" placeholder="请输入产品名称" v-model="name"><br> 
+            产品价格:<input type="text" value="0" v-model="price">          
+            <button @click="add">添加</button><br>
+            <input type="text" v-model="keyword">
+            <button @click="search">查询</button>
+        </div>
+        <ul>
+            <li v-for="(product,index) in productList" :class="{select:product.isselect}" @click="select(product)">
+                <input type="checkbox" @click.stop v-model="del" :value="index">
+                <span class="close" @click.stop="close">[X]</span> 
+                <span class="name">{{product.name}}</span> 
+                <span class="num">{{product.price}}</span>
+            </li>
+        </ul>
+        <div id="total">
+            <button @click="delAll">删除选中</button>
+            <span>总价</span>{{sum()}}
+        </div>
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+        var mv = new Vue({
+            el:"#container",
+            data: {
+                productList:[
+                    {
+                        name:"衣服",
+                        price:123,
+                        isselect:false
+                    },{
+                        name:"裤子",
+                        price:123,
+                        isselect:false
+                    },{
+                        name:"鞋",
+                        price:123,
+                        isselect:false
+                    },{
+                        name:"帽子",
+                        price:123,
+                        isselect:false
+                    }
+                ],
+                count:0,
+                name:"",
+                price:0,
+                del:[],
+                keyword:''         
+            },
+            methods:{
+                select(product){                                        
+                    product.isselect = !product.isselect;
+                    /* 方法一*/
+                   /*  if(product.isselect)
+                      this.count += parseInt(product.price);
+                    else this.count -= parseInt(product.price);  */
+                },
+               /* 方法二  */
+               sum(){
+                //    把count清空，遍历，如果是红的就加到count里
+                    let sum = 0;
+                    this.productList.forEach(function(val,index) {
+                        if(val.isselect)
+                         sum += parseInt(val.price);
+                    });
+                    return sum;            
+                },
+                add(){
+                    this.productList.push({
+                        name:this.name,
+                        price:this.rice,
+                        isselect:false,                   
+                    });
+                    this.name = ""; // 添加完让文本框恢复原状
+                    this.price = 0;
+                },
+                close(index){
+                    this.productList.splice(index,1);
+                },
+                delAll(){
+                    console.log(this.del);
+                    /* this.del.forEach((val)=>{  //用箭头函数可以，用function不可以
+                        this.productList.splice(val,1)
+                    }); */
+                    let arr = this.productList.filter((val,idx)=>{            
+                        if(!this.del.includes(idx))
+                            return val;
+                    });
+                    this.productList = arr;
+                    this.del = [];
+                },
+                search(){
+                    let arr1 = this.productList.filter((val,index)=>{
+                        if(val.name.includes(this.keyword))
+                         return val;
+                    });
+                    this.productList = arr1;
+                }
+                
+
+            }
+        })
+    </script>
+    
+</body>
+</html>

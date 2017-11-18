@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var obj = {
+          fn1:function(){
+              console.log(this);   //obj
+          },
+          fn2(){
+            console.log(this); //obj
+          },
+          fn3:()=>{
+            console.log(this); //window
+          }
+      };
+   /*    var obj1 ={
+
+      } */
+      console.log(this); //window
+      obj.fn1();
+      obj.fn2();
+      obj.fn3();  //箭头函数指向调用时的对象，不是定义时的对象
+    </script>
+</body>
+</html>

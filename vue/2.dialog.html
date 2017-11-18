@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dialog-com{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .dialog-box{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: #cccccc;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+        }
+        .dialog-title{
+            height: 20px;
+            display: inline-block;
+            width: 100px;
+        }
+        .dialog-content{
+            border-top: 1px solid black;
+        }
+        /* .dialog-title{
+            float: left;
+        } */
+        .dialog-close{
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button @click="showLogin=true">登录</button>
+        <button @click="showRegister=true">注册</button>
+        <my-dialog v-show="showLogin"  @close="showLogin=false">
+                <span slot="item">登录</span>
+                <!-- <span class="dialog-close" @click="showLogin=false">[X]</span>  -->
+                <div slot="content">
+                    登录窗口
+                </div>
+        </my-dialog>
+ 
+        <my-dialog v-show="showRegister" @close="showRegister=false">          
+                    <!-- <slot="item">注册</slot> 这样写不对，要作为属性写在标签里-->
+                 <span slot="item">注册</span>
+                 <div slot="content">
+                        注册窗口
+                 </div>
+                <!-- <span class="dialog-close">[X]</span>                  -->
+        </my-dialog>
+    </div>
+    
+    <template id="dialog">
+        <div class="dialog-com">
+             <div class="dialog-box">
+                <span class="dialog-title">
+                    <slot name="item"></slot> 
+                </span>
+                <span class="dialog-close" @click="$emit('close')">[X]</span> <!-- $emit()  -->
+                <div class="dialog-content">
+                   <slot name="content"></slot>
+                </div>
+            </div>
+        </div>     
+    </template>
+
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                showLogin:false,
+                showRegister:false
+            },
+            components:{
+                myDialog:{
+                    template:"#dialog"
+                }
+            }
+        })
+    </script>
+</body>
+</html>

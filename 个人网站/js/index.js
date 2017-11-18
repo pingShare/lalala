@@ -1,7 +1,18 @@
-/**
- * Created by Thinkpad on 2017/10/7.
- */
-
+/* requirejs.config({
+    paths : {
+        jquery: "jquery-1.11.2"
+    }
+}); */
+require(["jquery-1.11.2", "carousel"], function($, Carousel){
+    var imgs1 = ["img/hobby-cat.jpg", "img/hobby-cat.jpg","img/hobby-cat.jpg","img/hobby-cat.jpg"];
+    var setting1 = {
+        selector : ".container",
+        imgArr : imgs1,
+        speed : 500,
+        buttonStyle : "square",//circle
+        arrowsPos : "bottom"//center
+    };
+})
 $(function () {   //JQ方法
     $("#top").on("click",function () {
         var target;
@@ -19,7 +30,7 @@ $(function () {   //JQ方法
 //               target.animate({iScrollTop:0},800);
     });
 
-    $(".sub-pro").on("click",function () {
+    /* $(".sub-pro").on("click",function () {
         console.log($(".sub-pro"));
         var aSubPro = document.getElementsByClassName("sub-pro");
         console.log(aSubPro);
@@ -33,6 +44,23 @@ $(function () {   //JQ方法
             console.log(this.index);
             aPro[this.index].style.display = "block";
         }
-    })
+    }) */
+    $('.canvas').radialIndicator({
+        barColor: {
+           70: '#FF0000',
+            80: '#FFFF00',
+            90: '#0066FF',
+            100: '#33CC33'
+        },
+        percentage: true,
+        radius: 70,
+        minValue:0,
+        maxValue: 100
+    });
+
+    $('div.canvas:eq(0)').data('radialIndicator').animate(70);
+    $('div.canvas:eq(1)').data('radialIndicator').animate(80);
+    $('div.canvas:eq(2)').data('radialIndicator').animate(75);
+    $('div.canvas:eq(3)').data('radialIndicator').animate(70);
 });
 

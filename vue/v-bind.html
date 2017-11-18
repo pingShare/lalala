@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+       <img :src="imgSrc" :alt="imgAlt">
+       <div :class="className">div1</div>
+       <div :class="{bb:isBb}">div2</div>
+        <div :class="{aa:isAa,bb:isBb}">div3</div>
+        <div :style="styleObj">div4</div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                imgSrc:"https://cn.vuejs.org/images/logo.png",
+                imgAlt:'图片加载失败',
+                className:'aa',
+                isAa:true,
+                isBb:false,
+                styleObj:{
+                    width:'200px',
+                    backgroundColor:"#ccc"
+                }
+            }
+        });
+        // console.log(vm);
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-一.使用bootstrap的步骤{
+﻿一.使用bootstrap的步骤{
    1.<!DOCTYPE html>
    2.导入jquery,导入css(定义了各种样式) ，导入jS(产生交互效果)，不要搞错顺序
    3.套用class
@@ -6,5 +6,56 @@
 }
 
 为了能够正常使用bootstrap.min.css文件的上一级目录必须要有 fonts 目录，并且里面有，不能够缺失
+
+
+原来col-md-9,col-md-3,如果想把左边列调到右边col-md-push-3，右边调到左边col-md-pull-9
+
+
+偏移offset
+col-md-offset-6
+
+隐藏或者显示
+visible-xs      hidden-xs
+
+导航栏。。。
+固定在页面顶部或底部的导航栏 navbar-fixed-top,navbar-fixed-top
+导航栏中的文字、按钮和其他菜单
+三条横线 隐藏
+
+bootstrap小图标
+
+用户登录提示框
+
+tabindex 快捷键 提高网站可用性
+
+remote 引用文件
+remote：login.html或者链接的地方href="login.html"或者在div上标注data-remote="login.html"
+
+modal（“toggle"|"hide"|"show"）可以控制对话框显示或者隐藏
+
+对话框的事件
+show.bs.modal    shown.bs.modal
+hide.bs.modal    hiden.bs.modal    loaded.bs.modal
+
+轮播图{
+旋转木马  (相当于幻灯片加上自动播放控制)
+holder.js自动加载图片
+播放上一张下一张的按钮控制，bootstrap自带的小图标
+标识当前播放的幻灯片的小圆点
+按钮组控制前后，播停
+
+keydown e.which可获取到当前的键盘码  
+
+slide.bs.carousel   slid.bs.carousel
+carousel-caption
+}
+
+
+
+
+
+
+
+
 
 

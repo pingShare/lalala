@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- <weichuang></weichuang> -->
+        <my-components  :aa="msg"></my-components>
+    </div>
+
+    <div id="app2">
+        <!-- <weichuang></weichuang> -->
+        <my-cpts :bb="mag2"></my-cpts>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        // 注册或获取全局组件
+        Vue.component('weichuang',{
+            template:`<h1>这是全局组件</h1>`,
+           
+        })
+      new Vue({
+          el:'#app',
+          data:{
+            msg:'这是局部组件'
+          },
+          components:{
+              myComponents:{
+                  template:`<h1>{{aa}}</h1>`,
+                  props:['aa']   //组件传值用props
+             }
+          }
+      })
+
+      new Vue({
+          el:"#app2",
+          data:{
+              mag2:'aiiiiii'
+          },
+          components:{
+              myCpts:{
+                  template:`<h1>{{bb}}</h1>`,
+                  props:['bb']
+              }
+          }
+      })
+    </script>
+
+</body>
+</html>

@@ -8,11 +8,7 @@ a{
 li{
     list-style: none;
 }
-/*.bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-}*/
-/*header*/
+
 header{
     height: 680px;
     /*background-color: rgba(0, 0, 0, 0.8);*/
@@ -65,24 +61,28 @@ header span,.email span{
     margin:0 auto;
      width: 60px;
      height: 60px;
-     background-color:rgb(255, 15, 101);
+     /* background-color:rgb(255, 15, 101); */
+     /* background-image: url(../img/head-spirte.png); */
      border-radius: 50% 50%;
-     border:2px solid white;
+     /* border:2px solid white; */
+     background-size: contain;
     cursor: pointer;
  }
 .transparent-circle{
     margin:0 auto;
     width: 60px;
     height: 60px;
-    background-color:transparent;
+    /* background-color:transparent; */
+    /* background-image: url(../img/head-spirte.png); */
     border-radius: 50% 50%;
-    border:2px solid white;
+    background-size: contain;
+    /* border:2px solid white; */
     cursor: pointer;
 }
 
 /*know me*/
 .know-me{
-    height: 450px;
+    height: 500px;
     padding: 40px;
 }
 
@@ -92,6 +92,7 @@ header span,.email span{
 }
 .knowme-container img{
     width: 80px;
+    margin-right: 20px;
 }
 .detail{
     font-weight:500;
@@ -104,24 +105,34 @@ header span,.email span{
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .canvas{
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
+    text-align: center;
+    color:rgb(255, 15, 101);
+    padding-top: 20px;
 }
-#download{
+canvas{
+    margin-top: 50px;
+}
+/* #download{
     height: 400px;
-}
+} */
 
 #skill-container{
     height: 100%;
-    padding:5%;
+    text-align: center;
+    padding:4%;
     background: url(../img/15.png),repeat;
 }
 #skill-container div{
     height: 289px;
+    /* padding: 40px 0; */
+    margin:0;
+    display: inline-block;
 }
 .myskill p{
     color: white;
@@ -168,6 +179,7 @@ h4{
     margin:0 auto;
     width: 80%;
     height: 100%;
+    text-align: center;
 }
 #project-container div{
     padding: 0;
@@ -182,32 +194,22 @@ h4{
 }
 
 /*hobby*/
-#hobby{
-    width: 80%;
-    margin:0 auto;
-    /*height: 500px;*/
+.carousel-inner img{
+    width: 65%;
+    margin: auto;
 }
-/*para*/
-#para{
-    height: 400px;
-    padding:30px 60px;
+.carousel-inner,#slideshow{
+    width: 100%;
+    height: 500px;
+    position: relative;
 }
-#para-container{
-    /*background-color: #CCCCCC;*/
-    height: 100%;
-    padding: 10px 3%;
-    margin:0 auto;
-    width: 90%;
-}
-.detailpara h4{
-    cursor: pointer;
-}
-.list,.detailpara{
-    height: 300px;
-    margin-top: 20px;
-}
-.list  a:hover{
-    text-decoration: none;
+#slideshow h2{
+    color:black;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: 2;
+    font-family: "宋体";
 }
 
 /*connect*/
@@ -215,7 +217,7 @@ h4{
     background-color: rgba(0, 0, 0, 0.80);
 }
 #connect-me img{
-    height: 500px;
+    height: 400px;
     width: 100%;
     z-index: -1;
     position: absolute;
@@ -224,12 +226,14 @@ h4{
 #connect-container{
     z-index: 3;
     width: 100%;
+    margin-top: 0;
     height: 500px;
     text-align: center;
     /*background: rgba(0, 0, 0, 0.80);*/
 }
 #connect-container h1{
-    padding:60px 0;
+    padding:50px 0;
+    margin-top: 30px;
 }
 .email input,.email textarea{
     border:1px solid white;
@@ -241,6 +245,7 @@ h4{
     height: 40px;
     margin: 7px 0;
     color: white;
+    background-color: transparent;
 }
 .email textarea{
     height: 100px;
@@ -277,11 +282,57 @@ h4{
     background-color: transparent;
     border:2px solid rgb(255, 15, 101);
 }
-
-
+@media (max-width:1200px){
+    .project{
+        height: 900px;
+    }
+} 
+@media (max-width:992px){
+    .project{
+        height: 800px;
+    }
+} 
 
 @media (max-width:768px) {
+    .header-center,.header-right{
+        display: none;
+    }
+    .knowme-container img{
+        float: left;
+    }
+    .know-me{
+        height:600px;
+    }
+    .detail{
+        clear: left;
+    }
+    #skill{
+        height: 800px;
+    }
+    #skill canvas{
+        float: left;
+    }
+    .project{
+        text-align: center;
+    }
+    .sub-pro{
+        width: 80%;
+        display: block;
+        float: left;     
+        margin-left:10%; 
+    }
     #project-container{
         width: 100%;
     }
+    .project{
+        height: 1800px;
+    }
+    #connect-me{
+        height: 700px;
+    }
+  /*   @media (max-width:768px){
+
+    } */
 }
+
+

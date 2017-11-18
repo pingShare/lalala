@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>{{num}}</div>
+        <weichuang :msg="msg" @click.native="add"></weichuang>   <!--父组件往子组件传值;自定义组件定义事件要加.native-->
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let web = {
+            props:['femsg','msg'],
+            template:`<h1>{{femsg}}</h1>`
+        };
+        let wcwx = {
+            template:`<div>
+            <h1>这是父组件</h1>
+            <fe femsg='femsg'></fe>
+            <fe :femsg='msg'></fe>
+            </div>
+            `,
+            components:{
+                fe:web
+            },
+            props:['msg']
+        };
+
+
+       new Vue({
+           el:'#app',
+           data:{
+               msg:"msg233",
+               num:1
+           },
+           components:{
+               weichuang:wcwx
+           },
+           methods:{
+               add(){
+                   this.num++;
+               }
+           }
+       })
+    </script>
+</body>
+</html>

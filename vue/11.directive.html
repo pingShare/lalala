@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1 v-weichuang="aa">hhfowihf</h1>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+      /* 简写 Vue.directive("weichuang",function(el,binding,vnode){
+           el.style.background = binding.value;
+       }); */
+
+       //写全
+       Vue.directive('weichuang',{
+        bind(el,binding,vnode) {
+            console.log(el);
+            console.log(binding);
+            console.log(vnode);
+            el.style.background = binding.value;        
+       },
+       insert(){
+            console.log('insert');
+       },
+
+       
+       });
+       new Vue({
+           el:"#app",
+           data:{
+               aa:"green" 
+           }
+       })
+    </script>
+</body>
+</html>

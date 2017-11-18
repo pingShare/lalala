@@ -1,420 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc4a50b-ea00-48f4-a6a8-31cfd18e30f4" name="Default" comment="JQuery练习">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/adindex.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/ads/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/ads/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/ads/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/ads/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/ads/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/advertise.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/btn_cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/chos.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/common.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/headerbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/hot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/loadingAnimation.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/look.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/blue_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/green_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/pro_img/yellow_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/star-matrix.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/theme.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/upload/20120216.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/upload/20120217.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/upload/20120218.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/upload/20120219.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/upload/20120220.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/zoom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/zoomlens.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/images/zoomloader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/adindex.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/ads/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/ads/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/ads/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/ads/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/ads/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/advertise.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/btn_cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/chos.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/common.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/headerbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/hot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/loadingAnimation.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/look.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/blue_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/green_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/pro_img/yellow_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/star-matrix.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/theme.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/upload/20120216.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/upload/20120217.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/upload/20120218.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/upload/20120219.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/upload/20120220.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/zoom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/zoomlens.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/images/zoomloader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/adindex.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/ads/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/ads/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/ads/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/ads/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/ads/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/advertise.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/btn_cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/chos.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/common.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/headerbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/hot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/loadingAnimation.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/look.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/blue_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/green_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/pro_img/yellow_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/star-matrix.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/theme.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/upload/20120216.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/upload/20120217.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/upload/20120218.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/upload/20120219.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/upload/20120220.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/zoom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/zoomlens.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/images/zoomloader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/网格系统前缀.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/img02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/connectme.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/google-plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/head.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/hire.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/hobby-cat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/home.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/qq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/skill.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/spirte.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/star.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/starbucks.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/weibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/img/weixin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/app_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/app_device.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/app_qr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/banner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/banner2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/code.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/coffee1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/coffee2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/mooncake1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/mooncake2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/wsg-cup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/wsg-qrcode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/wsg-title.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/wsg-wording.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/adindex.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/ads/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/ads/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/ads/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/ads/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/ads/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/advertise.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/btn_cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/chos.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/common.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/headerbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/hot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/loadingAnimation.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/look.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/blue_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/green_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_one.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_one_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_one_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_three.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_three_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_three_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_two.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_two_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/pro_img/yellow_two_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/star-matrix.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/theme.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/upload/20120216.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/upload/20120217.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/upload/20120218.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/upload/20120219.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/upload/20120220.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/zoom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/zoomlens.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/images/zoomloader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/img/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/img/ab3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ES6/1-练习.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ES6/es6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/un5-轮播图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/scripts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/scripts/jquery-1.11.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/scripts/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/box.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/skin/skin_0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/skin/skin_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/skin/skin_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/skin/skin_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/skin/skin_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/skin/skin_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/26_网上商城/styles/thickbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/jquery.min.js.dump" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/ad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/addhot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/changeSkin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/finish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/imgHover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/imgSlide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/input.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/jquery.jqzoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/jquery.simplemodal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/jquery.thickbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/sizeAndprice.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/star.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/switchColor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/switchImg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/scripts/use_jqzoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/box.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/skin/skin_0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/skin/skin_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/skin/skin_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/skin/skin_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/skin/skin_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/skin/skin_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/7_网上商城/styles/thickbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/jquery.min.js.dump" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/scripts/myindex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/box.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/skin/skin_0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/skin/skin_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/skin/skin_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/skin/skin_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/skin/skin_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/skin/skin_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JQuery/练习题/商城/styles/thickbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sass/Sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/bootstrap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css3/26_3D旋转木马.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css3/7un旋转木马.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/translate居中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/各种居中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/55555" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/css/carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/chord.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/eventRiver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/force.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/funnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/gauge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/heatmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/k.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/scatter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/tree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/treemap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/venn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/chart/wordCloud.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/echarts-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/dist/echarts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/js/canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/js/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/js/hobby.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/js/jquery-1.11.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/个人网站/js/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/正则表达式/正则表达式" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/555555" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/css/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/menu_icon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/img/udp-ios-en.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/16_parents_closest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/21_轮播图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/23_左右选择.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/scripts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/scripts/jquery-1.11.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/scripts/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/box.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/skin/skin_0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/skin/skin_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/skin/skin_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/skin/skin_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/skin/skin_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/skin/skin_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/26_网上商城/styles/thickbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/jquery-1.11.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/let.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/let.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JQuery/JQuery" afterPath="$PROJECT_DIR$/JQuery/JQuery" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html5/h5" afterPath="$PROJECT_DIR$/html5/h5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirejs/轮播图/js/index.js" afterPath="$PROJECT_DIR$/requirejs/轮播图/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/我的小店/index.html" afterPath="$PROJECT_DIR$/我的小店/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/移动端web开发/jquerymobile/jqm" afterPath="$PROJECT_DIR$/移动端web开发/jquerymobile/jqm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/移动端web开发/移动端web开发" afterPath="$PROJECT_DIR$/移动端web开发/移动端web开发" />
+    <list default="true" id="fcc4a50b-ea00-48f4-a6a8-31cfd18e30f4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/img02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/translate居中.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/各种居中.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/撑开div.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/img/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/img/google-plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/img/head.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/img/spirte.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/img/twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/js/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/js/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/个人网站/js/hobby.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vscode/settings.json" afterPath="$PROJECT_DIR$/.vscode/settings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/bootstrap" afterPath="$PROJECT_DIR$/bootstrap/bootstrap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/个人网站/.vscode/settings.json" afterPath="$PROJECT_DIR$/个人网站/.vscode/settings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/个人网站/css/style.css" afterPath="$PROJECT_DIR$/个人网站/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/个人网站/index.html" afterPath="$PROJECT_DIR$/个人网站/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/个人网站/js/index.js" afterPath="$PROJECT_DIR$/个人网站/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/移动端web开发/星巴克/css/style.css" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/移动端web开发/星巴克/index.html" afterPath="$PROJECT_DIR$/移动端web开发/星巴克/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -432,7 +41,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="es6" pinned="false" current-in-tab="true">
+      <file leaf-file-name="es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/es6">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
@@ -445,8 +54,28 @@
       <file leaf-file-name="1-练习.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/1-练习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+            <state relative-caret-position="119">
+              <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/个人网站/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="56" column="81" lean-forward="false" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/移动端web开发/星巴克/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="244" column="1" lean-forward="true" selection-start-line="244" selection-start-column="1" selection-end-line="244" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -455,8 +84,8 @@
       <file leaf-file-name="Sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sass/Sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="792">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -513,7 +142,6 @@
         <option value="$PROJECT_DIR$/移动端web开发/jquerymobile/jqm" />
         <option value="$PROJECT_DIR$/移动端web开发/移动端web开发" />
         <option value="$PROJECT_DIR$/移动端web开发/星巴克/index.html" />
-        <option value="$PROJECT_DIR$/移动端web开发/星巴克/css/style.css" />
         <option value="$PROJECT_DIR$/练习/dd.html" />
         <option value="$PROJECT_DIR$/个人网站/style.css" />
         <option value="$PROJECT_DIR$/requirejs/轮播图/js/index.js" />
@@ -523,7 +151,6 @@
         <option value="$PROJECT_DIR$/个人网站/js/index.js" />
         <option value="$PROJECT_DIR$/练习/let.js" />
         <option value="$PROJECT_DIR$/练习/let.html" />
-        <option value="$PROJECT_DIR$/个人网站/index.html" />
         <option value="$PROJECT_DIR$/个人网站/55555" />
         <option value="$PROJECT_DIR$/个人网站/css/style.css" />
         <option value="$PROJECT_DIR$/JQuery/JQuery" />
@@ -531,6 +158,8 @@
         <option value="$PROJECT_DIR$/Sass/Sass" />
         <option value="$PROJECT_DIR$/ES6/1-练习.html" />
         <option value="$PROJECT_DIR$/ES6/es6" />
+        <option value="$PROJECT_DIR$/个人网站/index.html" />
+        <option value="$PROJECT_DIR$/移动端web开发/星巴克/css/style.css" />
       </list>
     </option>
   </component>
@@ -546,9 +175,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1370" />
+    <option name="width" value="1378" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -581,28 +213,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lalo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lalo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/fellow16" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -762,6 +380,7 @@
       <workItem from="1508305434102" duration="10862000" />
       <workItem from="1508376821077" duration="16272000" />
       <workItem from="1508570330388" duration="1414000" />
+      <workItem from="1510931757730" duration="1813000" />
     </task>
     <task id="LOCAL-00001" summary="ggj">
       <created>1500046063378</created>
@@ -921,7 +540,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="587280000" />
+    <option name="totallyTimeSpent" value="589093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -933,20 +552,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="745" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16816817" sideWeight="0.4870968" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16813509" sideWeight="0.4870968" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24954791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28209764" sideWeight="0.5129032" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28209764" sideWeight="0.5129032" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -995,7 +614,8 @@
     <MESSAGE value="响应式设计" />
     <MESSAGE value="requirejs" />
     <MESSAGE value="自己的小试验" />
-    <option name="LAST_COMMIT_MESSAGE" value="自己的小试验" />
+    <MESSAGE value="练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="练习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,13 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/移动端web开发/星巴克/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="200" column="23" lean-forward="true" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1230,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/个人网站/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/个人网站/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1302,16 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sass/Sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/1-练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+        <state relative-caret-position="792">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1320,6 +918,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/1-练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/个人网站/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="56" column="81" lean-forward="false" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/移动端web开发/星巴克/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="244" column="1" lean-forward="true" selection-start-line="244" selection-start-column="1" selection-end-line="244" selection-end-column="1" />
           <folding />
         </state>
       </provider>

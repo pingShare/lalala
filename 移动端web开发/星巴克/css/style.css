@@ -183,7 +183,163 @@
 }
 
 #watch{
+    height:220px;
+    /* line-height:220px; */
+    background: url(../img/web-bg.png) repeat-x;
+    text-align: center;
+    /* vertical-align: top; */
+    /* vertical-align:middle; */
+}
+#watch-pic{
+    background: url(../img/web-iwatch-cn.png) no-repeat;
+    height: 100%;
+    /* float: left; */
+    width: 408px;
+    display: inline-block;
+    vertical-align:middle;
+}
+#watch-detail{
+    display: inline-block;    
+    width: 480px;
+    height: 114px;
+    vertical-align:middle;
+    text-align: left;
+    padding: 0 60px;
+  
+    /* float: left; */
+    /* margin-bottom: 100px; */
+    /* margin-top: -60px; */
+}
+#watch-detail h4{
+    line-height: 29px;
+}
+#watch-code{
+    display: inline-block;
+    width: 140px;
+    /* float: left; */
+    height: 207px;
+    vertical-align:middle;
+    padding-top: 30px;
+}
+#watch-code img{
+    width: 130px;
+    height: 130px;
+}
+#watch-download{
+    display: none;
+}
+#watch-download a{
+    display: block;
+    width: 188px;
+    height: 75px;
+    background: url(../img/udp-starbucks-cn.svg);
+}
+
+#choice{
     height: 500px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding-top:60px;
+    text-decoration: none;
+}
+#choice h2{
+    margin-top: 0;
+}
+#choice>h4{
+    color: #8B8B8B;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#choice a:hover{  
+    color: #b89f7a;
+    text-decoration: none;
+}
+.choice-card{
+    border: 1px solid #cccccc;
+    width: 240px;
+    height: 280px;
+   
+    color: black;
+    display: inline-block;
+    margin: 0 12px 40px 12px;
+}
+.choice-card img{
+    width: 100%;
+    height: 160px;
+}
+.choice-card-bottom h4{
+    font-weight: bold;
+    margin-top: 16px;
+    display: inline-block;
+}
+.arrow{
+    display: none;
+    width: 16px;
+    height: 16px;
+    /* display: inline-block; */
+    background: url(../img/arrow.png) center center no-repeat;
+}
+@media (max-width:668px){
+    #choice{
+        height: 800px;
+    }
+    .choice-card{
+       width: 136px;
+       height: 220px;
+       vertical-align: top;
+    }
+    .choice-card img{
+        height: 86px;
+    }
+    .arrow{
+        display: inline-block;
+    }
+}
+@media (max-width:360px){
+    #choice{
+        height: 1280px;
+    }
+}
+
+@media (max-width:1052px){
+    #watch{
+        height: 730px;
+    }
+    #watch-pic{
+        display: block;
+        width: 414px;
+        height: 338px;
+        margin:0 auto;
+        background-size: contain;
+        background-image: url(../img/mobile-iwatch-cn.png);    
+    }
+    #watch-detail{
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        height: 140px;
+        text-align: center;
+    }
+    #watch-detail a{
+        color: #a98e67;
+        font-size: 14px;
+        /* position: absolute; */
+        display: block;
+        /* width: 48%;  */
+    }
+    #watch-download{
+        /* display: block; */
+        display: inline-block;
+        width: 188px;
+        height: 75px;
+        margin: 0 auto;
+        background: url(../img/udp-starbucks-cn.svg);
+    }
+    #watch-code{
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     #left-card{

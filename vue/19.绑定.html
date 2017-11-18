@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="ipt">
+        <h2 id="h2"></h2>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+      /*  new Vue({
+           el:"#app",
+           data:{
+                msg:""
+           }
+       }) */
+
+    //    数据绑定原理：用一个对象，es5里的object.defineProperty,建立起两者之间的关系
+   var obj = {};
+   var oIpt = document.getElementById('ipt');
+   oIpt.onkeyup = function(){
+       obj.name = this.value;   //obj的name属性？
+   };
+
+   Object.defineProperty(obj,'name',{
+       get:function(){},
+       set:function(val){
+           document.getElementById('h2').innerHTML = val;
+       }
+   });
+// diff算法
+    </script>
+</body>
+</html>

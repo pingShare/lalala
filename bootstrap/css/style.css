@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-form input[type="text"]{
+    background: #313131;
+    color: #999999;
+    border:none
+}
+.navbar-form button{
+    background:none;
+    color:#999999;
+    border:none;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+}
+.navbar-form{
+    position: relative;
+}
+@media(min-width:768px){
+    .navbar-inverse button{
+        top:15%;
+    }
+}

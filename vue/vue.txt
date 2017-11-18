@@ -1,0 +1,86 @@
+vue主要掌握1.指令  2.组件
+指令
+v-if在DOM结构里不显示
+v-else-if  v-else 
+v-show    和v-if的区别   v-show不显示，DOM结构里还会有 相当于display：none;
+v-for 
+
+计算属性  computed
+v-text解决刷新闪烁的问题,建议少用v-html，避免安全问题
+
+v-on:keyup简写 @keyup
+    可以绑定多个事件
+methods是vue对象的方法
+$event固定写法  //哪里用
+
+阻止事件冒泡 @click.stop()  
+
+v-model 双向数据绑定  原理Object.defineProperty()
+
+
+todolist  名字、数字放一个数组？不行
+当前点击的对象
+
+todolist{
+    <li v-for="(p,index) in price">
+    产品{{index}}--{{p}}
+</li>
+
+数组里放对象
+
+标识自己的状态，触发事件时可以传变量
+
+foreach map ...循环
+
+.stop 阻止默认行为，阻止事件冒泡
+
+箭头函数避免this问题 和 bind()
+filter返回符合条件的新的数组
+}
+
+addName和addPrice要在data里定义吗？
+
+
+箭头函数指向定义时的对象，不是调用时的对象
+var obj = {
+    f1:function(){
+        console.log(this);
+    },
+  /* 格式写错了 fn2()=>{
+        console.log(this);
+    },
+    fn3:(){
+        console.log(this);
+    }*/
+
+      fn1: function(){
+            console.log(this);
+        },
+        fn2(){
+            console.log(this);
+        },
+        fn3: () => {
+            console.log(this);
+        }
+}
+obj.fn1();  //obj
+obj.fn2();  //obj
+obj.fn3();  //window
+
+
+template  想标识元素，但不把它加入DOM结构
+
+组件{
+    相当于自定义标签
+}
+
+object.defineProperty()
+:key = index  利于重建DOM树  diff算法
+
+
+
+
+
+
+
+
