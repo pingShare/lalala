@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*  const [first,...arg] = [1,2,3,4,5];
+      console.log(first);  //1
+      console.log(arg);   //[2,3,4,5] 
+
+      const [first,...rest] = [];
+      console.log(first);  //undefined
+      console.log(rest);   //[]
+
+      const [first,...rest] = ["foo"];
+      console.log(first);  //foo
+      console.log(rest);   //[] */
+
+      console.log(...[1,2,3,4]); //1 2 3 4   扩展运算符
+    //   console.log(1,...rest);  //error
+
+      function add(...values) {
+        let sum = 0;
+          console.log(values);
+
+        for (var val of values) {
+            sum += val;
+        }
+        return sum;
+        }
+
+        add(1, 2, 3) // 6
+      
+    </script>
+</body>
+</html>

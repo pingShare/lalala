@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var a= 8;
+      function f1(){
+        var a=10;  //局部变量，在次函数作用域内是10，执行完函数即释放
+        a = 10;  //此处全局变量，改变了a的值
+      }
+      f1();
+      console.log(a);
+
+    </script>
+</body>
+</html>
