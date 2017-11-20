@@ -79,14 +79,17 @@ object.defineProperty()
 
 
 
-Vue全家桶
+Vue全家桶   插件vetur snippets
 vue 主要-单页应用
 
 template
 script
 style
 
+子路由 children:{}
+$route可以取到当前组件的属性
 
 
+@表示src
 
-
+dispatch  

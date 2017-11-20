@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编程题</title>
+</head>
+
+<body>
+    <script>
+        /*  1.有一行单词，空格为单词间的间隔，找出其中最长的单词和最短的单词 
+        var sen = "it is a nice day";
+        var word = sen.split(" ");
+        console.log(word);
+        word.sort(function(a,b){
+            // console.log(a.length); //字符串数组里元素也有长度,  字符串长度string.length
+            return a.length-b.length;
+        })
+        console.log(word[0]);
+        console.log(word[word.length-1]);
+         */
+
+        //2.在一个字符串中找到第一个只出现一次的字符。如输入abacceff，则输出b
+     /*    var str = "abacceff";
+        // var arr = str.split('');
+            for(var i=0; i<str.length;i++){
+                  if(str.indexOf(str[i]) == str.lastIndexOf(str[i]))
+                  {console.log(str[i]);break;}
+            }        */ 
+        
+
+        //3.写一个函数，用于随机生成一个n-m之间的数字  [0,1)=> [10--100] 
+ /*        function rom(n,m){
+            return  Math.floor(Math.random()*(m-n+1))+n;
+        } 
+        console.log(rom(1,10)); */
+
+        //4.定一个函数test(n,m)  n>1,m>n,返回n到m之间的所有回文数。
+        //（回文数是正读和反读相同的数，例如 121，1001,…）
+    /*     function test(n,m){
+            for(var i=n; i<=m; i++){              
+                if(i.toString().split('').join('') === i.toString().split('').reverse().join('')){
+                    console.log(i);   //如果不加join('')就不输出   字符串不能够比较大小            
+                }                
+            }
+        }
+        test(10,200);*/  
+    </script>
+</body>
+
+</html>
