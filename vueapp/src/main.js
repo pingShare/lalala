@@ -3,10 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './assets/js/rem.js'
+import './assets/css/reset.css'
 
-//把组件和地址联系起来,加载公共组件
+
 Vue.config.productionTip = false
-
+global.API_PROXY = 'https://bird.ioliu.cn/v1/?url='
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

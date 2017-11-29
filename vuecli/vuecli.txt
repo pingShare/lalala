@@ -1,0 +1,41 @@
+src/router/index.js   路由routes：[这里面是component，不是components]
+src/main.js是components
+
+
+子路由配在children  主的routerview占位
+
+子路由的path不用加/   主的要加/
+beforeRouterEnter(组件内的守卫)要写在组件vue内；beforeEnter(路由独享的守卫)要写在main.js的new Router里
+
+
+Vueapp:
+header\footer、
+rem   rem.js
+import ...和import  from ...
+字垂直居中 line-height   verticai-align
+
+export default里data写成一个函数data(){}
+
+
+axios axios.get().resolve().then();
+axios返回的是promise对象  .then  .catch
+跨域 服务器代理 main.js
+
+弹性盒模型 一部分宽度固定的设成->width:0
+
+gif动图   mounted     
+
+高度的获取：
+document.ducumentElement.clientHeight 可视区域获取
+
+//id传到对应接口
+
+routerlink跳转或者js  $router.push('/路径')
+
+改颜色:组件间传值，slot
+
+vue-aplayer组件 播放器
+
+nodejs写法require   es6写法 import
+
+index = nowindex;

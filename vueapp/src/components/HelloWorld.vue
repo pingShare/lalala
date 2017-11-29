@@ -27,15 +27,7 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  },
-  /*  beforeRouteEnter: (to, from, next) => {
-        console.log('准备进入') ; //此时重定向到这里的也会有钩子效果
-        next();
-      },
-      beforeRouteLeave: (to, from, next) => {
-        console.log('准备离开');
-        next();
-      } */
+  }
 }
 </script>
 
