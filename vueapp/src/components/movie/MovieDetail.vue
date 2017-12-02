@@ -21,7 +21,7 @@ export default {
         API_PROXY +
         "http://m.maoyan.com/movie/" +
         this.$route.params.moveId +'.json';
-      let url2 = "/static/moviedetail.json";
+      let url2 = "/static/data/moviedetail.json";
       Axios.get(url2).then( res =>{
         this.detail = res.data.data.MovieDetailModel;
         //  console.log(this.detail);

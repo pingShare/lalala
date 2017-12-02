@@ -44,7 +44,7 @@ export default {
         API_PROXY +
         "http://m.maoyan.com/movie/list.json?type=hot&limit=10&offset=" +
         this.movieList.length;
-      let url2 = "/static/moviedata.json";
+      let url2 = "/static/data/moviedata.json";
       Axios.get(url2)
         .then(res => {
             this.loadingShow = true;

@@ -3,7 +3,7 @@
     <common-header>
         <h2 slot="title">Music</h2>
     </common-header>
-    <h1>music</h1>
+    <router-view></router-view>
     <common-footer></common-footer>
 </div>
    
