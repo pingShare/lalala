@@ -39,3 +39,5 @@ vue-aplayer组件 播放器
 nodejs写法require   es6写法 import
 
 index = nowindex;
+
+photo:vue touch插件

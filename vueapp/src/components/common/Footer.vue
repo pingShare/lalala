@@ -1,7 +1,7 @@
 <template>
   <ul class="footer">
       <li><router-link to="/movie/MovieList">电影</router-link></li>
-      <li><router-link to="/music/">歌曲</router-link></li>
+      <li><router-link to="/music/MusicList">歌曲</router-link></li>
       <li><router-link to="/movie/MovieList">书籍</router-link></li>
       <li><router-link to="/movie/MovieList">图片</router-link></li>
   </ul>

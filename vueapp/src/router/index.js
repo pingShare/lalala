@@ -7,6 +7,10 @@ import Movie from '@/components/movie/Movie'
 import MovieList from '@/components/movie/MovieList'
 import MovieDetail from '@/components/movie/MovieDetail'
 import Music from '@/components/music/Music'
+import MusicList from '@/components/music/MusicList'
+import MusicDetail from '@/components/music/MusicDetail'
+import Book from '@/components/book/Book'
+import Photo from '@/components/photo/Photo'
 
 Vue.use(Router)
 
@@ -32,7 +36,21 @@ export default new Router({
       ]
     },{
       path:'/music',
-      component:Music
-    } 
+      component:Music,
+      children:[{
+        path:'MusicList',
+        component:MusicList
+      },{
+        path:'MusicDetail',
+        component:MusicDetail
+      }]
+    },{
+      path:'/book',
+      component:Book
+    },{
+      path:'/photo',
+      component:Photo
+    }
+
   ]
 })
