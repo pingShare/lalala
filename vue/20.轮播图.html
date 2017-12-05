@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        .container{
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .container img{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+        .tabs{
+            position: absolute;
+            right: 0;
+            bottom:0;
+        }
+        .tabs li{
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            color: white;
+            float: left;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgs">
+            <img :src="item" alt="" v-for="(item,index) in imgs">
+        </div>
+        <ul class="tabs">
+            <li v-for="(item,index) in 3">{{item}}</li>
+        </ul>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+    new Vue({
+        el:'.container',
+        data:{
+            imgs:[
+            'https://img3.doubanio.com/lpic/s24468373.jpg',
+            'https://img3.doubanio.com/lpic/s6989253.jpg',
+            'https://img3.doubanio.com/lpic/s27102925.jpg'
+            ]
+        }
+    })
+    </script>
+</body>
+</html>

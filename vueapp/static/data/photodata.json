@@ -1,7 +1,7 @@
 {
   "photoData": [
     {
-      "src": "/static/img/1.jpg"
+      "src": "../static/img/1.jpg"
     },
     {
       "src": "/static/img/2.jpg"

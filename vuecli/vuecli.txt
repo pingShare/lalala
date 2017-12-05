@@ -36,8 +36,11 @@ routerlink跳转或者js  $router.push('/路径')
 
 vue-aplayer组件 播放器
 
+book 轮播图插件vue-swipe
 nodejs写法require   es6写法 import
 
 index = nowindex;
 
 photo:vue touch插件
+
+
