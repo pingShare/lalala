@@ -9,7 +9,7 @@ requirejs：模块加载(require)及定义(define)时的路径小结   http://ww
 只有AMD才能require引入，引用之前确认一下
 怎么判断数组？
 arr.constructor  ==Array?是数组
-array instanceof Array
+array instanceof Array  返回true or false
 
 类和对象：{
 改变this指向{
