@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>我的星巴克</title>
@@ -8,25 +7,73 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
+        
     <header id="header">
-        <div id="menu">
-            <img src="img/menu_icon.svg" alt="">
-            <p>菜单</p>
-        </div>
-        <div id="logo">
-            <img src="img/logo.svg" alt="">
-        </div>
-        <div id="club">
-            <span>星享俱乐部
-                <br>
-                <a href="">登录</a>和
-                <a href="">注册</a>
-            </span>
-        </div>
+       
+            <div id="menu">
+                <img src="img/menu_icon.svg" alt="">
+                <p>菜单</p>
+            </div>
+            
+            <div id="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div id="club">
+                <span>星享俱乐部
+                    <br>
+                    <a href="">登录</a>和
+                    <a href="">注册</a>
+                </span>
+            </div>
+            <div id="screen">
+            <div id="slide-menu">
+                    <div id="slide-menu-top">
+                        <p>English</p>
+                        <p>星巴克门店</p>
+                        <p>天猫旗舰店</p>                   
+                    </div>
+                    <hr>
+                    <div id="slide-menu-bottom">
+                         <p>首页</p> 
+                         <div class="menu-list">
+                             <p class="menu-text text:after">新品推荐</p>
+                             <a href="">当季新品</a>
+                             <a href="">星巴克月饼</a>
+                             <a href="">气致™冷萃咖啡</a>
+                             <a href="">冷萃冰咖啡</a>
+                             <a href="">星巴克ORIGAMI™</a>
+                             <a href="">星巴克焕新食</a>
+                         </div>
+                         <p>星享俱乐部</p>
+                         <div>
+                             <p class="menu-text text:after">星巴克移动应用</p>
+                             <a href="">星巴克移动应用</a>
+                             <a href="">星巴克 Apple Watch</a>
+                         </div>
+                         <p>星礼卡</p>
+                         <div>
+                             <p class="menu-text text:after">咖啡文化</p>
+                             <a href="">咖啡文化</a>
+                             <a href="">星巴克甄选咖啡</a>
+                             <a href="">如何冲泡咖啡</a>
+                         </div>
+                         <div>
+                             <p class="menu-text text:after">饮品美食</p>
+                             <a href="">饮品</a>
+                             <a href="">星巴克美食</a>
+                             <a href="">茶瓦纳</a>
+                         </div>
+                    </div>
+                </div>
+    </div> 
     </header>
+   
+           
 
     <figure id="banner">
         <img src="img/banner1.jpg" alt="">
@@ -163,11 +210,105 @@
         </div>
     </section>
 
-    <footer id="footer">
+    <footer class="page-footer cn" id="footer">
+        <div class="container">
+                <div class="item item-click">
+                    <h4 class="item-title item-title:after">最新资讯</h4>
+                    <div class="item-content">
+                        <a href="" class="item-link">当季新品</a>
+                        <a href="" class="item-link">星巴克月饼</a>
+                        <a href="" class="item-link">气致™冷萃咖啡</a>
+                        <a href="" class="item-link">冷萃冰咖啡</a>
+                        <a href="" class="item-link">星巴克ORIGAMI™</a>
+                        <a href="" class="item-link">星巴克焕新食</a>
+                    </div>
+                </div>
 
+                <div class="item item-click">
+                    <h4 class="item-title item-title:after">菜单</h4>
+                    <div class="item-content">
+                        <a href="" class="item-link">饮品</a>
+                        <a href="" class="item-link">星巴克美食</a>
+                        <a href="" class="item-link">星巴克咖啡</a>
+                        <a href="" class="item-link">星巴克VIA® 免煮咖啡</a>
+                        <a href="" class="item-link">茶瓦纳™</a>
+                    </div>
+                </div>
+                <div class="item item-click">
+                    <h4 class="item-title item-title:after">星享卡</h4>
+                    <a href="">登录账户</a>
+                    <a href="">注册星享卡</a>
+                    <a href="">忘记密码</a>
+                    <a href="">报失星享卡</a>
+                    <a href="">了解星享卡</a>
+                    <a href="">购买星享卡</a>
+                </div>
+
+                <div class="item item-click">
+                    <h4 class="item-title item-title:after">星巴克礼品卡</h4>
+                    <a href="">管理星礼卡</a>
+                    <a href="">申请发票</a>
+                    <a href="">了解星礼卡</a>
+                    <a href="">购买星礼卡</a>
+                </div>
+
+                <div class="item item-click">
+                    <h4 class="item-title item-title:after">关于星巴克</h4>
+                    <a href="">企业新闻</a>
+                    <a href="">我们的使命和价值观</a>
+                    <a href="">星巴克责任</a>
+                    <a href="">工作在星巴克中国</a>
+                    <a href="">加入星巴克</a>
+                    <a href="">星巴克在中国</a>
+                    <a href="">历史回顾</a>
+                </div>
+
+                <div class="item item-click">
+                    <h4 class="item-title item-title:after">快速链接</h4>
+                    <a href="">天猫旗舰店</a>
+                    <a href="">星巴克门店</a>
+                    <a href="">联系星巴克</a>
+                    <a href="">下载手机应用</a>
+                </div>
+
+                <div class="item">
+                    <h4 class="item-title item-title:after">常见问题</h4>
+                    <a href="">星享卡</a>
+                    <a href="">星礼卡</a>
+                    <a href="">移动应用</a>
+                    <a href="">电子发票</a>
+                    <a href="">星巴克中国</a>
+                </div>
+                <div class="item download-section">
+                    <img src="img/app_qr_20170209.png" alt="">
+                    <div class="download-btns">
+                       <!--  <a href="" class="download-btns-btn "></a>
+                        <a href="" class="download-btns-btn "></a>  -->
+                        <a href=""  onclick="ga_download('HP','app','download_btn');" id="footer-download-iphone" class="download-btns-btn">b</a>
+                        <a href="" onclick="ga_download('HP','app','download_btn');" id="footer-download-android" class="download-btns-btn">f</a>
+                    </div>
+                    <p>扫码下载app</p>
+                </div>
+
+                <div class="page-footer-row footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p class="contents-wording">&copy; 2017 Starbucks Corporation</p>
+                        <a class='contents-wording' target='_blank' href='http://www.miitbeian.gov.cn/'>All rights reserved. 沪ICP备17003747号</a>
+                        <a class='contents-wording' target='_blank' href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000318'>
+                          <span class='police-img'></span> 沪公网安备 31010402000318号
+                        </a>
+                    </div>
+                    <div class="footer-bottom-right icons">
+                        <a class="wechat icon" onclick="$('#wechat_qrcode').toggle();ga('send', 'event', 'social icons', 'footer', 'weixin');" id="footer-social-wechat">
+                            <div id="wechat_qrcode" class='wechat-qrcode'></div>
+                          </a>
+                          <a class="weibo icon" onclick="ga('send', 'event', 'social icons', 'footer', 'weibo');" id="footer-social-weibo" href="http://www.weibo.com/starbucks" target="_blank"></a>
+                    </div>
+                </div>
+        
+        </div>
     </footer>
-    <script src="js/jquery-1.11.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

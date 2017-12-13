@@ -333,8 +333,83 @@
 }
 
 #footer{
-    height: 826px;
+    /* height: 826px; */
+    color:white;
+    background-color: #292929;
+    vertical-align: top;
+    display: flex;
+    padding: 30px 20px;
 }
+#footer a{
+    color:white;
+    display: block;
+    height: 27px;
+    width: 280px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+    background-color: #292929;
+}
+.item{
+   vertical-align: top;
+    display: inline-block;
+   margin-top: 40px;
+   width: 280px;
+   position: relative;
+   background-color: #292929;
+}
+
+.item img{
+    width: 100px;
+}
+.item .download-section .download-btns-btn{
+    font-family: 'icon';
+ }
+.footer-bottom{
+     margin-top: 30px;
+     background-color: #292929;
+     height: 100px;
+ }
+ .footer-bottom-left{
+    display: inline-block;
+    /* width: 350px; */
+ }
+#footer .footer-bottom-left a{
+    /* display: inline-block; */
+    width: 350px;
+ }
+.footer-bottom-right{
+    display: inline-block;
+}
+ @media(max-width:767px){
+    .item-title:after{
+        content: '';
+        position: absolute;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+        right: 0;
+        top: 10px;
+    }
+    .item{
+        width: 100%;
+        margin-top: 0;
+    }
+    .item-title{
+        width: 100%;
+    }
+    #footer a{
+        display: none;
+    }
+    #footer .container{
+        margin: 0;
+        width: 100%;
+    }
+    .download-section{
+        display: none;
+    }
+ }
 @media (max-width:668px){
     #choice{
         height: 800px;
@@ -372,7 +447,11 @@
         width: 970px;
     }
 }
-
+@media(min-width:992px) and (max-width:1200px){
+    #footer a,.item{
+        width: 225px;
+    }
+}
 @media (max-width:1052px){
     #watch{
         height: 730px;
@@ -411,6 +490,12 @@
         display: none;
     }
 }
+@media (min-width:768px) and (max-width:992px){
+    #footer a,.item{
+        width: 170px;
+    }
+}
+
 @media (max-width: 768px) {
     #left-card{
         width: 100%;
