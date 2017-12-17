@@ -21,13 +21,15 @@ export default {
         //    console.log(res);
         this.photolist = res.data.photoData;
         // console.log(this.photolist);
+        //存到vuex
+        this.$store.dispatch('setPhotoList',res.data.photoData)
       })
       .catch(err=>{});
   }
 };
 </script>
 <style scope>
-@import url('../../assets/css/common.css');
+ @import url('../../assets/css/common.css'); /*如何引入css文件 */
 .photo {
   margin: 1rem 0;
 }
