@@ -10,6 +10,7 @@
     <router-link to="/testurl/5/lili">测试Url</router-link>
     <router-link to="/home">redirect</router-link>
     <router-link to="/abc">alias</router-link>
+    <router-link to="/counter">counter</router-link>
    </div>
    <transition name="fade">
       <router-view/>

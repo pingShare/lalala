@@ -43,4 +43,12 @@ index = nowindex;
 
 photo:vue touch插件
 
+vuex:{
+    state:vuex-store.js里的state里的变量，通过$store.state.变量就都可以访问到
+    mutations 可传参
+    mutations修改状态，直接调用方法import {mapState,mapMutations} from 'vuex';
+             methods里写mapMutations(['mapMutations里的函数名'])
+    getters计算过滤操作  相当于计算属性
 
+    actions
+}

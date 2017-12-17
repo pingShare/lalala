@@ -5,9 +5,8 @@ import Test from '@/components/Test'
 import Test1 from '@/components/Test1'
 import Test2 from '@/components/Test2'
 import TestUrl from '@/components/TestUrl'
+import Counter from '@/components/Counter'
 //把地址和组件联系起来
-
-
 
 Vue.use(Router)
 
@@ -49,6 +48,10 @@ export default new Router({
     },{
       path:'/home',
       redirect:'/'
+    },
+    {
+      path:'/counter',
+      component:Counter
     }
   ]
 })
