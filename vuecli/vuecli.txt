@@ -61,4 +61,4 @@ vuex 状态管理
     报错：组件未注册 =>vue-touch还要起别名Vue.use(VueTouch,{name:"v-touch"})
 
     computed和watch区别  computed每次会生成一个变量，watch是监听当前的变量变化
-
+spa单页应用
