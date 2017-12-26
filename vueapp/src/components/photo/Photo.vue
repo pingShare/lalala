@@ -1,10 +1,10 @@
 <template>
   <div class="photo">
-     <common-header>
+     <common-header   color="olivedrab">
           <h2 slot="title">Photo</h2>
      </common-header>
      <router-view></router-view>
-     <common-footer></common-footer>
+     <common-footer   color="olivedrab"></common-footer>
   </div>
 </template>
 <script>

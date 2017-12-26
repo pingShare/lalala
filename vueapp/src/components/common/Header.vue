@@ -1,6 +1,6 @@
 <template>
-    <div class="header">
-        <a href="" class="home">首页</a>
+    <div class="header"  :style="{background:color}">
+        <a href="" class="home" >首页</a>
         <h2 class="title">
             <slot name="title"></slot>
         </h2>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  
+  props:["color"]
 }
 </script>
 

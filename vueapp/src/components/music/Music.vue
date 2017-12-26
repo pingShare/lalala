@@ -1,10 +1,10 @@
 <template>
 <div class="music">
-    <common-header>
+    <common-header  color="cadetblue">
         <h2 slot="title">Music</h2>
     </common-header>
     <router-view></router-view>
-    <common-footer></common-footer>
+    <common-footer color="cadetblue"></common-footer>
 </div>
    
 </template>

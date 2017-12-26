@@ -1,5 +1,5 @@
 <template>
-  <div class="music">
+  <div class="music"  color="yellow">
       <router-link to='MusicDetail'>
          <img :src="'../'+music.bg" alt="" v-for="music in imgList" :key="music.id">
       </router-link>

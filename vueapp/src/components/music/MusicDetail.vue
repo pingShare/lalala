@@ -1,5 +1,5 @@
 <template>
-  <div class="music">
+  <div class="music"  color="yellow">
       <a-player v-if='isShow' :autoplay='true' :music="musicList" :showlrc="3"></a-player>
   </div>
 </template>

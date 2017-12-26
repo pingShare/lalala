@@ -1,5 +1,5 @@
 <template>
-  <ul class="footer">
+  <ul class="footer"   :style="{background:color}">
       <li><router-link to="/movie/MovieList">电影</router-link></li>
       <li><router-link to="/music/MusicList">歌曲</router-link></li>
       <li><router-link to="/book">书籍</router-link></li>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    
+    props:["color"]
 }
 </script>
 

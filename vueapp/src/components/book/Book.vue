@@ -1,6 +1,6 @@
 <template>
   <div class="book">
-      <common-header>
+      <common-header color="brown">
           <h2 slot="title">Book</h2>
       </common-header> 
       <swipe class="my-swipe">
@@ -8,7 +8,7 @@
         <swipe-item class="slide2"></swipe-item>
         <swipe-item class="slide3"></swipe-item>
       </swipe>
-      <common-footer></common-footer>
+      <common-footer color="brown"></common-footer>
   </div>
 </template>
 <script>
@@ -22,7 +22,8 @@ export default {
         CommonFooter,
         'swipe': Swipe,
     'swipe-item':SwipeItem
-    }
+    },
+    // props:['color']
 }   
 </script>
 <style>
@@ -31,7 +32,7 @@ export default {
 }
 .my-swipe {
   height: 200px;
-  color: #fff;
+  color:#fff;
   font-size: 30px;
   text-align: center;
 }
