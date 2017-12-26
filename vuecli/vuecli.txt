@@ -52,3 +52,13 @@ vuex:{
 
     actions
 }
+vuex 状态管理
+
+移动端：click 300ms的延迟 swipeleft和swiperight左滑右滑
+    type点透问题  =>引入第三方文件fastclick.js解决
+
+    vue-touch安装  cnpm install vue-touch@next  (vue-touch不支持vue2.0，@next是测试版)
+    报错：组件未注册 =>vue-touch还要起别名Vue.use(VueTouch,{name:"v-touch"})
+
+    computed和watch区别  computed每次会生成一个变量，watch是监听当前的变量变化
+

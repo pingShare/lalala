@@ -1,20 +1,44 @@
 <template>
-  <div class="detail" :style="styleObj">
-      <!-- <h2>{{$route.params.index}}</h2> -->
-    
-  </div>
+ 
+  <vue-touch @swipeleft="swipeleft" @swiperight="swiperight" @tap="tap" class="detail" :style="styleObj">
+     
+  </vue-touch>
 </template>
 <script>
 export default{
     data(){
-        return{
-            styleObj:{
-                background: `#000 url(${this.$store.state.photoList[this.$route.params.index]}.src) no-repeat center/contain`
+     return{
+         nowIndex :0        
+        }
+    },
+    computed:{     
+            styleObj(){
+              return{
+                  background: `#000 url(${this.$store.state.photoList[this.nowIndex].src}) no-repeat center/contain`                 
+                // background: "#000 url("+this.$store.state.photoList[this.nowIndex].src+") no-repeat center/contain"
+              }
             }
+    },
+    methods:{
+        swipeleft(){
+            this.nowIndex--;
+            if(this.nowIndex == -1){
+                this.nowIndex = this.$store.state.photoList.length-1;
+            }
+        },
+        swiperight(){
+            this.nowIndex++;
+             if(this.nowIndex == this.$store.state.photoList.length){
+                this.nowIndex = 0;
+            }
+        },
+        tap(){
+            this.$router.go(-1);          
         }
     },
 mounted(){
-    console.log(this.$store.state.photoList[this.$route.params.index].src);
+    // console.log(this.$store.state.photoList[this.$route.params.index].src);
+    this.nowIndex = this.$route.params.index;
 }
 }    
 </script>
