@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转的立方体</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+			background: black;
+		}
+		body{
+			perspective-origin: 600px -600px;
+			perspective: 1000px;
+		}
+		#container{
+			/*background: black;*/
+			
+			width: 200px;
+			height: 200px;
+			background: none;
+			margin:200px auto;
+			/*position: relative;*/
+		    transform-style: preserve-3d;
+			/*  perspective: 1000px;
+			            perspective-origin: 500px -600px;  要用在转动的父元素上，这里是container的父元素body */
+              animation: rotate 4s linear infinite;
+		}
+		.surf{
+			width:200px;
+			height: 200px;
+			background: rgba(255, 255, 255, 0.6);
+			position: absolute;
+			text-align: center;
+			line-height: 200px;
+			font-size: 50px;
+			border: 2px solid white;
+		}
+		@keyframes rotate{
+			from { 
+				/*transform: rotateY(0deg);*/
+			 }
+			to{
+				transform: rotateY(-360deg);
+			}
+		}
+		.one{
+			transform: rotateY(-180deg) translateZ(100px);
+		}
+		.two{
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+		.three{
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.four{
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+		.five{
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.six{
+			transform: translateZ(100px);
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="surf one" >1</div>
+		<div class="surf two">2</div>
+		<div class="surf three">3</div>
+		 <div class="surf four">4</div>
+		<div class="surf five">5</div>
+		<div class="surf six">6</div> 
+	</div>
+	
+</body>
+</html>
