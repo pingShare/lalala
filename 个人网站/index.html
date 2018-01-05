@@ -71,8 +71,20 @@
                 </div>
             </div>
             <div class="detail col-lg-8 col-md-8 col-sm-8">
-                <p>个人技能个人技能个人技能个人技能个人技能个人技能个人技能个个人技能个人技能个人技能个人技能
-                    人技能个人技能个人技能个人技能个人技能个人技能个人技能个人技能个人技能</p>
+                <!-- <p>熟练使用html、css、js开发符合W3C标准的网页，用js、jquery实现简单的交互<br>
+                        熟悉jquery，阅读过jquery源码，尝试自己封装过jquery方法，对浏览器兼容性有一定了解
+                        理解模块化开发思想，能使用requirejs进行模块化开发，封装过简单的组件，如轮播图、弹出框
+                        了解html5中的新标签，对h5和css3的兼容性以及新特性有一定了解，尝试自己写过一些css3特效
+                        了解移动端web开发，能熟练运用boot strap和媒体查询进行响应式开发
+                        了解vue的基础知识，用vuecli开发过项目，熟悉vuecli在项目中的组件化开发流程
+                        能够使用webpack、parcel打包器对项目进行打包，了解sass工具
+                        了解php、nodejs的基础知识
+                        熟悉ajax原理，能运用ajax与后台进行交互处理，熟悉json数据的转换
+                        了解ES6基本语法，对promise对象有一定了解
+                        了解计算机网络知识，了解http协议，对前端安全知识有简单了解
+                        熟悉软件工程，了解工程化开发流程 ,了解多种设计模式以及MVC、MVP、MVVM多种软件架构方式
+                        熟练运用办公软件，掌握PS基础知识，掌握切图技术， 能用github进行整体项目开发
+                        </p> -->
                 <p>个人技能个人技能个人技能个人技能个人技能个人技能个人技能个个人技能个人技能个人技能个人技能
                         人技能个人技能个人技能个人技能个人技能个人技能个人技能个人技能个人技能</p>
             </div>
@@ -143,7 +155,7 @@
     </section>
 
     <!-- 爱好 -->
-    <div class="carousel slide" id="slideshow" data-interval="2000" >
+  <!--   <div class="carousel slide" id="slideshow" data-interval="2000" >
       <h2>日常爱好</h2>
         <ol class="carousel-indicators">
             <li data-target="#slideshow" data-slide-to="0" class="active"></li>
@@ -163,8 +175,38 @@
         <a href="#slideshow" data-slide="next" class="right carousel-control">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-    </div>
+    </div> -->
+    <div class="container" id="hobby-container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6" id="tab-body">
+                    <div class="tab" role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist" id="tab-nav">
+                            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
+                            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
+                            <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Section 3</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content tabs">
+                            <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                <h3>手绘</h3>
+                                <p class="pic"><img src="img/hobby-cat.jpg" alt=""></p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                <h3>拍照</h3>
+                                <p><img src="img/climbing.jpg" alt=""></p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                <h3>写字</h3>
+                                <p>写得好了再传上来~~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- 联系我 -->
     <section id="connect-me">
         <img src="img/connectme.jpg" alt="">
         <div id="connect-container">
