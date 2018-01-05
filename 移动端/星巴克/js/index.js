@@ -11,7 +11,8 @@ $(function(){
                 $('#slide-menu').css('display','none');
                 $(this).css('display','none');
                }
-         } )
+         } );
+        //  $('#screen').trigger('click');
          window.onscroll= function(){    //滚动条滚动也能让侧边栏消失
             if($('#slide-menu').css('display')=='block'){
                 $('#slide-menu').css('display','none');
