@@ -274,12 +274,14 @@ h4{
     width: 100%;
 }
 .tab-pane img{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+     /* height: auto; */
+     max-width: 100%; 
+     display: block;
 }
 #tab-body{
     margin: 0 auto;
-    width: 1200px;
+    width: 100%;
 }
 #tab-nav{
    margin: 0 auto;
