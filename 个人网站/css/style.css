@@ -101,6 +101,7 @@ header span,.email span{
 .detail{
     font-weight:500;
     line-height: 25px;
+    text-indent: 2rem;
 }
 
 #skill{
@@ -272,6 +273,7 @@ h4{
 }
 .pic{
     width: 100%;
+    height: 600px;
 }
 .tab-pane img{
     width: 90%;
