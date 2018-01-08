@@ -274,8 +274,9 @@ h4{
     width: 100%;
 }
 .tab-pane img{
-    width: 100%;
-     /* height: auto; */
+    width: 90%;
+     height: 90%;
+     box-shadow: 12px;
      max-width: 100%; 
      display: block;
 }
