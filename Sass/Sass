@@ -1,8 +1,8 @@
 XMPP   HTDOCX
 
-//汉字乱码
-写中文不对
+//汉字乱码,写中文不对 (看博客，已解决)
 
+文件名后缀.scss
 Sass
 文件编译 sass Sass/scss/style.scss:Sass/style.css
 实时编译 sass --watch Sass/scss/style.scss:Sass/style.css
