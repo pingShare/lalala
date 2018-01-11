@@ -65,12 +65,11 @@ button:hover{
 #screen{
     position: absolute;
     z-index: 45;
-    /* background: rgba(0, 0, 0, 0.5); */
     width: 100%;
     display: none;
 }
 #slide-menu{
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 270px;
     height: 648px;
@@ -79,19 +78,18 @@ button:hover{
     color: white;
     overflow-y: scroll;
     overflow-x: hidden;
-    z-index: 100;
+    /* z-index: 100; */
     display: none;
     float: left;
 }
 #screen-right{
-    position: fixed;
+    position: absolute;
     top: 0;
-    z-index: 100;
     display: none;
     right: 0;
     bottom: 0;
     left: 270px;
-    float: right;
+    /* z-index,float都没有用 */
     background: rgba(0, 0, 0, 0.5);
 }
 #slide-menu-top,#slide-menu-bottom{
