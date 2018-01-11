@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent {
+            width: 300px;
+            height: 300px;
+            background: grey;
+        }
+
+        #child {
+            width: 200px;
+            height: 200px;
+            background: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        事件冒泡 自内向外地去触发事件（子元素是内部）
+        事件捕获 自外向内地触发事件（自外向内）
+     -->
+    <!-- 事件冒泡  
+        <div id="parent">
+        <div id="child" class="child"></div>
+     </div>
+     <script>
+      document.getElementById("parent").addEventListener("click",function(e){
+                alert("parent事件被触发，"+this.id);
+            },true)
+            document.getElementById("child").addEventListener("click",function(e){
+                alert("child事件被触发，"+this.id)
+            },true)
+     </script> -->
+    <div onclick="outSideWork()" id="outSide" style="width:100px; height:100px; background:#000; padding:50px">
+        <div onclick="inSideWork()" id="inSide" style="width:100px; height:100px; background:#CCC"></div>
+    </div>
+    <script>
+    function outSideWork()
+{
+    alert('My name is outSide,I was working...');
+}
+
+function inSideWork()
+{
+    alert('My name is inSide,I was working...');
+}
+    </script>
+
+</body>
+
+</html>

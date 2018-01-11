@@ -6,11 +6,12 @@ $(function(){
         $('#screen').css('display','block');
     });
   
-         $('#screen').on('click',function(){   //点击右侧阴影处可使侧边栏消失
+         $('#screen').on('click',function(e){   //点击右侧阴影处可使侧边栏消失
               if($('#slide-menu').css('display')=='block'){
                 $('#slide-menu').css('display','none');
                 $(this).css('display','none');
                }
+               e.stopPropagation();
          } );
         //  $('#screen').trigger('click');
          window.onscroll= function(){    //滚动条滚动也能让侧边栏消失
