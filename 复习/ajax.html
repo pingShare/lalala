@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        // 创建XMLHttpRequest对象
+        if(window.XMLHttpRequest){
+            var xmlHttp = new XMLHttpRequest();   //标准浏览器
+        }else{
+            var xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');  //ie
+        }
+
+        // 发送请求 (请求方式、请求地址、异步的true)
+       /* GET方式
+        xmlHttp.open('GET','server.php',true);
+        xmlHttp.send(); */
+
+        xmlHttp.open('POST','server.php',true);
+        xmlHttp.setRequestHeader("...手册...")
+        xmlHttp.send();
+
+        xmlHttp.onreadystatechange = function(){
+            if(xmlHttp.readyStates == 4 && xmlHttp.status == 200){
+                console.log(xmlHttp.responseText);
+            }
+        }
+
+    </script>
+</body>
+</html>
