@@ -46,9 +46,9 @@ localStorage  一直存在，浏览器中手动删除，代码.removeItem清除�
 sessionStorage 方法和localStorage一样， 浏览器关闭就消失
 
 localStorage  sessionStorage  cookie session的区别
- cookie  存储大小： 4k,   客户端
- 另外两个  5M，不会随请求发送到后端，  存在客户端
- session保存在服务端，
+cookie  存储大小： 4k,   客户端
+另外两个  5M，不会随请求发送到后端,存在客户端
+session保存在服务端，
 
 webworker
   不能进行DOM操作

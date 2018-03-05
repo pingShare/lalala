@@ -1,0 +1,45 @@
+﻿express
+1.创建express     
+npm install -g express（默认最高版本）npm install -g express@3.5.0
+npm install -g express-generator
+
+mtest上一级目录下 express -e  mtest <-文件名
+cd mtest  
+npm install
+
+需要安装第三方
+npm install mysql --save
+
+模板语言  ejs jade template
+
+2.启动express
+node ./bin/www
+
+express-session 不好用，改用cookie-session
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+﻿一、
+node下的console是同步函数
+Chrome下的console是异步函数
+
+setTimeout
+on
+$Event         emit
+
+for(var i=0;i<=3;i++){
+    setTimeout(function(){
+        console.log(i);
+    }
+}
+->4 4 4 4
+消息队列（类似堆栈） 谁先触发谁先执行
+
+supervisor解决node修改问题  修改线程占用读取文件的问题
+调用了nodejs提供的chile_process,分发了一个子进程
+
+包（模块）：系统模块、自定义模块、第三方模块
+
+npm install -g 包名
+
+包头（请求头、响应头）、包体
+
+Content-type       .....    //MIME头  409种
+
+html渲染都经历了什么。。。。
+
+npm 是node的包管理系统
+               //lastmodify??
+
+用过哪些第三方模块？？？
+
+var start = new Date()
+setTimeout(){function(){
+    var end = new Date();
+    console.log(end-start)
+},500 }
+while(new Date-start>1000){}
+  输出1000,1001,1002，1003
+
+缓存的处理
+
+node为什么可以处理高并发
+    chrome->websever->(业务逻辑)服务器（消息排队等待处理器）
+
+事件触发（定时、事件监听、系统事件触发onclick）、异步回调
+
+异步调用第三方接口时会有各种情况，success、failed、others
+
+原型链
+typeof(Object/Function)->function
+var fun=new Function();         Function.prototype=fun.__proto__
+typeof(fun)->function;
+
+var obj = new Object();
+typeof(obj)->object;
+
+Function.prototype->Object  typeof(Object)->function
+
+fun.__proto__= Function.prototype
+
+Function.prototype.ss=function(){}
+->fun.ss也可以用
+
+二、
+重点 1.js异步处理
+    2.同步和异步回调函数
+    3.事件循环
+
+ajax    chrome->ajax引擎->webserver
+     $.post(地址，数据，function(data){
+                 },text)     //json
+
+
+js核心基础、commonjs、直接复制和引用复制、module.exports-exports、
+
+、javascript异步编程（延时、线程阻塞、队列）
+setTimeout()这样的异步函数只是简单做延迟执行，而不是孵化新的线程
+
+JavaScript环境提供的异步函数通常可以分为两大类：I/O 函数和计时函数
+
+在其他语言中，一不小心就会“阻塞”应用（通常是运行循环）直到
+完成I/O 请求为止。而在JavaScript 中，这种阻塞方式几乎沦为无稽
+之谈。类似如下的循环将永远运行下去，不可能停下来。
+var ajaxRequest = new XMLHttpRequest;
+ajaxRequest.open('GET', url);
+ajaxRequest.send(null);
+while (ajaxRequest.readyState === XMLHttpRequest.UNSENT) {
+// readyState 在循环返回之前不会有更改。
+};
+相反，我们需要附加一个事件处理器，随即返回事件队列。
+var ajaxRequest = new XMLHttpRequest;
+ajaxRequest.open('GET', url);
+ajaxRequest.send(null);
+ajaxRequest.onreadystatechange = function() {
+// ...
+};
+
+
+
+
+I/O:网络I/O  磁盘I/O
+
+闭包自执行
++function(){console.log(1)}();  ->1  nan  undefined+1->nan
+!function(){console.log(1)}();  ->1 true
+
+
+1.网络API   （axios）
+2.调用socket(udp)
+3.读取json文件
+
+readFile(异步的)  readFileSync(同步的)
+错误捕获 要放到任务队列里处理
+
+
+。。。（）{
+        setTimeout 2s后。。。
+}
+
+读取静态资源的方式 {
+    node server 把文件读取到内存 解析路径
+    把内容打成包体，同时处理包头明确Content-type statusCode
+}
+
+node全局函数  global process console 
+
+req.header  req.method req.url 常用
+
+静态资源发回和包体发回
+http.createserver{  回传解析
+    res.writeHead   //包头
+    var readpath    __dirname+''+url.parse(index.html).pathname //路径
+    var indexPage=fs.readFileSync(readpath);
+    res.end();
+}.listen('3000');
+
+node的get和post实现   几个关键点？？
+
+http协议 监听的数据 : connect data end
+
+commonjs  : require  exports module.exports
+exports module.exports的区别
+模块只能被单次加载，会覆盖
+
+动态调用->类     静态调用->对象
+
+阮一峰原生js
+
+基础模块应用、module、继承
+events/fs/global/http/net/path/process/querystring/url/util
+
+call/apply/bind的区别{
+  call调用对象的方法，把call(obj)里的方法都复制过来(这句放在最前),改变指针的指向      传参要一个一个传，不能用数组
+  apply 其他和call一样，
+  bind 绑定，没有拷贝的作用
+}
+
+三(1.23)、
+原生js实现继承Test.prototype=new Demo();
+    var test=new Test();
+    test.func();   //他自己方法里找不到，就去test.__proto__里找（也就是Test.prototype）
+
+原生js下把串转成对象 {
+  eval var obj=eval("("+aa+")")        //eval也可以将字符串转成代码
+                                       //eval有安全问题、变量污染
+  JSON.parse();//必须用双引    JSON.stringfy
+  querystring.parse();    querystring.stringfy
+} 
+
+PHP/node -->Express接收用->res.json()  json_encode()  json_decode()
+
+setTimeout的异步被甩回 局部变量变成全局 解决方法：bind...//..(博客)
+模拟定时器！！！
+
+
+promise解决  深渊
+
+本地化存储   webworker
+前端跨域、后端跨域
+BFC
+
+
+
+
+
+
+
+
+
+
+
