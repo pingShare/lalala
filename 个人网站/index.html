@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>myweb</title>
+    <title>是我</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <!--<link rel="stylesheet" href="css/carousel.css">-->
 </head>
 <body>
@@ -152,17 +153,18 @@
     </section>
 
     <!-- 爱好 -->
-    <div class="container" id="hobby-container">
-            <div class="row">
+    <!-- <div id="hobby-container"></div> -->
+    <div class="carousel-container" id="hobby-container">
+         <!--    <div class="row">
                 <div class="col-md-offset-3 col-md-6" id="tab-body">
                     <div class="tab" role="tabpanel">
-                        <!-- Nav tabs -->
+                        <!-- Nav tabs 
                         <ul class="nav nav-tabs" role="tablist" id="tab-nav">
                             <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">手绘</a></li>
                             <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">拍照</a></li>
                             <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">写字</a></li>
                         </ul>
-                        <!-- Tab panes -->
+                        <!-- Tab panes 
                         <div class="tab-content tabs">
                             <div role="tabpanel" class="tab-pane fade in active" id="Section1">
                                 <p>清晰度有限...</p>
@@ -179,8 +181,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>-->
+        </div> 
 
         <!-- 联系我 -->
     <section id="connect-me">
@@ -208,9 +210,10 @@
     <div id="top">顶部</div>
 
     <script src="js/jquery-1.11.2.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
    <script src="js/radialIndicator.min.js"></script>
-   <script src="js/index.js"></script>
-   <script src="./js/require.js" data-main="./js/index"></script>
+   <script src="js/require.js" data-main="js/index"></script>
+   <!-- <script src="js/index.js"></script> -->
+ 
 </body>
 </html>

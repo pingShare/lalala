@@ -1,51 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
+#hobby-container{
+    margin: 0 auto;
 }
-ul{
-    list-style: none;
+#hobby-container img{
+    width: 80%;
 }
 
 .carousel-container{
-    width:500px;
-    height: 350px;
     position: relative;
+    width: 80;
+    height: 280px;
 }
-.carousel-images img{
-    width:500px;
-    height: 350px;
+.carousel-imgs img{
     display: none;
 }
-.carousel-images .select{
+.carousel-imgs .selected{
     display: block;
 }
-.carousel-num{
-    list-style:none;
+.carousel-nav{
     position: absolute;
     right: 10px;
-    bottom: 5px;
+    bottom: 10px;
 }
-.carousel-num li,.carousel-arrows div{
-    float:left;
-    width:15px;
-    height: 15px;
-    margin-right: 6px;
-    color: white;
-    background: #000;
-    line-height: 15px;
+.carousel-nav li, .carousel-arrows div{
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    color: #fff;
     text-align: center;
+    line-height: 20px;
+    float: left;
+    margin-right: 5px;
     cursor: pointer;
 }
-/*.carousel-arrows{
-    position: absolute;
-    left: 3px;
-    bottom: 5px;
-}*/
-.carousel-num .select{
-    background-color: orange;
+.carousel-nav .selected{
+    background: orange;
+}
+.carousel-arrows{
+    /*position: absolute;
+    left: 10px;
+    bottom: 10px;*/
 }
 
-/*添加arrowpos,相当于添加一个类*/
 .carousel-arrows .carousel-left.bottom{
     position: absolute;
     left: 10px;
@@ -59,12 +54,12 @@ ul{
 .carousel-arrows .carousel-left.center{
     position: absolute;
     top: 50%;
-    /*margin-top: -10px;*/
-    left: 10px;
+    margin-top: -10px;
+    left: 0;
 }
 .carousel-arrows .carousel-right.center{
     position: absolute;
     top: 50%;
-    /*margin-top: -10px;*/
-    right: 10px;
+    margin-top: -10px;
+    right: 0;
 }
