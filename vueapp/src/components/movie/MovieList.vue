@@ -36,7 +36,7 @@ export default {
   },
   methods: {
      goDetail(movieId){
-         console.log(movieId);
+         /* console.log(movieId); */
           this.$router.push('/movie/MovieDetail/'+movieId);
       },
     loadData() {

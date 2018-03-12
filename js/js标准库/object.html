@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>object</title>
+</head>
+<body>
+	<script>
+		/*所谓“静态方法”，是指部署在Object对象自身的方法。除了静态方法还有实例方法*/
+	// 一
+	/*function Person(){
+		this.name='zhang';
+		this.age=10
+	}*/
+	/*var Person = function(){
+		this.name='zhang';
+		this.age=10
+	}
+	var p1 = new Person();
+	console.log(p1.name);*/
+	//二   true
+	/*var p1={   //对象实例，没有prototype
+		name:'zhang',
+		age:10
+	}
+	
+	// console.log(p1.toString()); //[object Object] 
+	p1.toString = function(){
+		return 'hello';
+	}
+	document.write(p1 +' '+'world');  //hello world
+
+	console.log(p1.hasOwnProperty('toString'));
+	console.log(p1.hasOwnProperty('name')); */
+
+	/*	var obj = {
+	  p: 123
+	};
+			
+	console.log(obj.hasOwnProperty('p')) ;// true
+	console.log(obj.hasOwnProperty('toString')); // false*/
+
+/*静态方法
+function Person(){}
+var p = new Person();
+p.print=function(){
+	console.log('print');
+}
+p.print();
+
+function Person(){}
+Person.print=function(){
+	console.log('print');
+}
+Person.print();*/
+
+	</script>
+	
+</body>
+</html>
