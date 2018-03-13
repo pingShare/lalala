@@ -86,24 +86,29 @@ header span,.email span{
 
 /*know me*/
 #know-me{
-    height: 500px;
-    padding: 40px;
+    /* height: 500px; */
+    padding: 40px 0 60px 0;
 }
-
+#know-me::after{
+    display: block;
+    clear: both;
+    content:"";
+}
 .knowme-container{
     margin:0 auto;
-    height: 360px;
+    /* height: 360px; */
 }
 .knowme-container img{
     width: 80px;
     margin-right: 20px;
+    
 }
 .detail{
     font-weight:500;
     line-height: 25px;
     text-indent: 2rem;
 }
-
+/* skill */
 #skill{
     height: 450px;
     background-image:url(../img/skill.jpg);
@@ -113,8 +118,8 @@ header span,.email span{
     background-size: cover; 
 }
 
-.canvas{
-    /* width: 200px; */
+/* .canvas{
+
     height: 200px;
     text-align: center;
     color:rgb(255, 15, 101);
@@ -132,7 +137,6 @@ canvas{
 }
 #skill-container div{
     height: 289px;
-    /* padding: 40px 0; */
     margin:0;
     display: inline-block;
 }
@@ -150,13 +154,20 @@ canvas{
     text-align: center;
     font-size: larger;
     background-color: grey;
-}
+} */
 h4{
     color: rgb(255, 15, 101);
 }
 
-
-
+/* project */
+.grid:hover {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  } 
 /*hobby*/
    #hobby-container{
        margin-top: 30px;
@@ -232,19 +243,6 @@ h4{
     background-color: transparent;
     border:2px solid rgb(255, 15, 101);
 }
-@media (max-width:1200px){
-    /* #project{
-        height: 900px;
-    } */
-} 
-@media (max-width:992px){
-    /* #project{
-        height: 800px;
-    } */
-   /*  #hobby-container{
-        margin-top: 200px;
-    } */
-} 
 
 @media (max-width:768px) {
     .header-center,.header-right{
@@ -253,15 +251,13 @@ h4{
     .knowme-container img{
         float: left;
     }
-    .know-me{
+   /*  .know-me{
         height:600px;
-    }
+    } */
     .detail{
         clear: left;
     }
-    #skill{
-        height: 800px;
-    }
+
     #skill canvas{
         float: left;
     }
@@ -277,15 +273,11 @@ h4{
     #project-container{
         width: 100%;
     }
-    /* .project{
-        height: 1800px;
-    } */
+
     #connect-me{
         height: 700px;
     }
-    /* #hobby-container{
-        margin-top: 1300px;
-    } */
+
 }
 
 
