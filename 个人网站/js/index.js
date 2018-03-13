@@ -4,10 +4,11 @@ require(["jquery-1.11.2", "carousel"], function($, Carousel){
         selector : "#hobby-container",
         imgArr : imgs1,
         speed : 2500,
-        buttonStyle : "square",//circle
-        arrowsPos : "bottom"//center
+        buttonStyle : "circle",//
+        arrowsPos : "center"//
     };
 
     var carousel1 = new Carousel(setting1);
     carousel1.init();
-})
+});
+ 

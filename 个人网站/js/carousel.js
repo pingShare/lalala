@@ -18,12 +18,12 @@ define(["jquery"], function($){
         this.$nav = $('<ul class="carousel-nav"></ul>');
         this.$arrows = $('<div class="carousel-arrows"></div>');
         this.$left = $('<div class="carousel-left">&lt;</div>');
-        this.$right = $('<div class="carousel-right">&gt;</div>');
+        this.$right = $('<div class="carousel-right">&gt;</div>'); 
     }
     Carousel.prototype.init = function(){
         this.nowIndex = 0;
         this.$container.append(this.$imgs).append(this.$nav).append(this.$arrows);
-        this.$arrows.append(this.$left).append(this.$right);
+    //   this.$arrows.append(this.$left).append(this.$right);
         for(var i=0; i<this.defaultSettings.imgArr.length; i++){
             this.$imgs.append("<img src='"+ this.defaultSettings.imgArr[i] +"'>");
             this.$nav.append("<li>"+ (i + 1) +"</li>");
@@ -46,7 +46,7 @@ define(["jquery"], function($){
             changeImg.call(this);
         }.bind(this));
 
-        this.$left.on("click", function(){
+         this.$left.on("click", function(){
             this.nowIndex--;
             if(this.nowIndex == -1){
                 this.nowIndex = this.defaultSettings.imgArr.length - 1;
@@ -59,7 +59,7 @@ define(["jquery"], function($){
                 this.nowIndex = 0;
             }
             changeImg.call(this);
-        }.bind(this));
+        }.bind(this)); 
 
         this.$container.hover(function(){
             clearInterval(this.timer);
@@ -69,11 +69,11 @@ define(["jquery"], function($){
 
         play.call(this);
 
-        function play(){
+         function play(){
             this.timer = setInterval(function(){
                 this.$right.trigger("click");
             }.bind(this), this.defaultSettings.speed);
-        }
+        } 
 
         //私有方法
         function changeImg(){
