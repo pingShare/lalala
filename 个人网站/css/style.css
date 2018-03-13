@@ -117,7 +117,12 @@ header span,.email span{
     background-position: center;
     background-size: cover; 
 }
-
+#skill-container{
+    height: 100%;
+    text-align: center;
+    padding:4%;
+    background: url(../img/15.png),repeat;
+}
 /* .canvas{
 
     height: 200px;
@@ -129,12 +134,7 @@ canvas{
     margin-top: 50px;
 }
 
-#skill-container{
-    height: 100%;
-    text-align: center;
-    padding:4%;
-    background: url(../img/15.png),repeat;
-}
+
 #skill-container div{
     height: 289px;
     margin:0;
